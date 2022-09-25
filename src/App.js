@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        This website is underdevelop. Wait for it, or not.
+        This website is underdeveloped. Wait for it, or not.
       </header>
     </div>
   );
