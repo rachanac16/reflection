@@ -5,27 +5,25 @@ import Typewriter from 'typewriter-effect';
 
 function Home(){
     return <div>
-        <Grid container direction={'column'} alignItems='center' justifyContent={'center'} style={{marginTop:200}}>
-            <Grid item justifyContent='center'>
-                <Typography variant='h6' align='center'>
+        <Grid container direction={'column'} alignItems='center' justifyContent={'center'}>
+            <Grid item justifyContent='center' xs={4}>
+                <Typography variant='h4' align='center'>
                     <Typewriter
                         onInit={(typewriter) => {
                             typewriter.typeString("Hi. I am...").start();
-                        }}
+                        }} 
                     />
                 </Typography>
             </Grid>
-            <Grid item>
-                <Grid container direction={'row'} alignItems='stretch' justifyItems='center' height={'inherit'}>
-                    <Grid item>
-                        <Typography variant='h1' align='center'> 
-                            Rachana C
-                        </Typography>
-                    </Grid>
-                </Grid>
+            <Grid item xs={4}>
+                <Typography variant='h1' align='center'> 
+                    <div className='name'>
+                        Rachana C
+                    </div>
+                </Typography>
             </Grid>
             <Grid item>
-                <Typography variant='h6' align='center'>
+                <Typography variant='h6' align='center' xs={4}>
                     <Typewriter
                         onInit={(typewriter) => {
                             typewriter.typeString("Also this website is under development. Wait for it. Or not.").start();

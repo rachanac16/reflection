@@ -1,25 +1,36 @@
 * {
   box-sizing: border-box;
 }
-html{
-  height: 100%;
-}
-#root{
-  height: 100%;
+
+html, body, #root, #root>div {
+    height: 100%;
+    margin: 0;
 }
 
 body {
-  margin: 0;
-  font-family: 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
-  height: 100%;
 }
+
 .container {
+  /* background-color: rgb(232, 93, 93); */
   color: white;
+  height:85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(232, 93, 93);
+    /* Old browsers */
+    background: linear-gradient(to right, rgb(232, 93, 93) 50%, rgb(91, 173, 231) 50%);
+    background-size: 200% 100%;
+    background-position:left bottom;
+    margin-left:10px;
+    transition:all 2s ease;
+}
+.container:hover{
+  background-position:right bottom; 
 }
 
 .toolbar {
@@ -27,13 +38,22 @@ body {
   background-color: black;
 }
 
+.name{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.name:hover{
+  color: black;
+}
+
 .navbar {
   text-decoration: none;
   color: white;
+  font-size: x-large;
+  font-weight: bolder;
 }
 .navbar:hover {
   text-decoration: none;
-  color: yellow;
+  color: rgb(232, 93, 93);
 }
-
 
