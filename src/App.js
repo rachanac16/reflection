@@ -13,10 +13,10 @@ function App() {
     <Navbar/>
     <div className="container">
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/about" element={<About/>}/>
-        <Route path="/experience" element={<Experience/>}/>
-        <Route path="/others" element={<Others/>}/>
+        <Route path="/reflection" element={<Home/>}/>
+        <Route path="/reflection/about" element={<About/>}/>
+        <Route path="/reflection/experience" element={<Experience/>}/>
+        <Route path="/reflection/others" element={<Others/>}/>
       </Routes>
     </div>
   </div>

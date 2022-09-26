@@ -5,10 +5,10 @@ import {Link, useMatch, useResolvedPath} from 'react-router-dom';
 function Navbar(){
     return <div>
         <Toolbar className='toolbar'>
-            <CustomLink to={"/"} className="navbar">Home</CustomLink>
-            <CustomLink to={"/about"} className="navbar">About</CustomLink>
-            <CustomLink to={"/experience"} className="navbar">Experience</CustomLink>
-            <CustomLink to={"/others"} className="navbar">Others</CustomLink>
+            <CustomLink to={"/reflection"} className="navbar">Home</CustomLink>
+            <CustomLink to={"/reflection/about"} className="navbar">About</CustomLink>
+            <CustomLink to={"/reflection/experience"} className="navbar">Experience</CustomLink>
+            <CustomLink to={"/reflection/others"} className="navbar">Others</CustomLink>
         </Toolbar>
     </div>;
 }
