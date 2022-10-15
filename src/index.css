@@ -23,7 +23,7 @@ body {
   align-items: center;
   background: rgb(232, 93, 93);
     /* Old browsers */
-    background: linear-gradient(to right, rgb(232, 93, 93) 50%, rgb(91, 173, 231) 50%);
+    background: linear-gradient(to right, rgb(232, 93, 93) 10%, rgb(91, 173, 231) 90%);
     background-size: 200% 100%;
     background-position:left bottom;
     margin-left:10px;
@@ -34,6 +34,7 @@ body {
 }
 
 .toolbar {
+  flex-wrap: wrap;
   justify-content: space-around;
   background-color: black;
 }
@@ -51,6 +52,7 @@ body {
   color: white;
   font-size: x-large;
   font-weight: bolder;
+  padding: 10%;
 }
 .navbar:hover {
   text-decoration: none;
