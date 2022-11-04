@@ -21,15 +21,19 @@ function App() {
   
   return <ThemeProvider theme={theme}>
     <div>
-      <Navbar/>
+      
       <div className='container'>
-        <Routes>
-          <Route path="/reflection" element={<Home/>}/>
-          <Route path="/reflection/about" element={<About/>}/>
-          <Route path="/reflection/experience" element={<Experience/>}/>
-          <Route path="/reflection/education" element={<Education/>}/>
-          {/* <Route path="/reflection/others" element={<Others/>}/> */}
-        </Routes>
+        <Navbar/>
+        <div className='homecontainer'> 
+          <Routes>
+            <Route path="/reflection" element={<Home/>}/>
+            <Route path="/reflection/about" element={<About/>}/>
+            <Route path="/reflection/experience" element={<Experience/>}/>
+            <Route path="/reflection/education" element={<Education/>}/>
+            {/* <Route path="/reflection/others" element={<Others/>}/> */}
+          </Routes>
+        </div>
+        
       </div>
     </div>
   </ThemeProvider>

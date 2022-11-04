@@ -1,43 +1,40 @@
-import { Grid, IconButton, Typography } from '@mui/material';
+import { Grid, IconButton, Typography, Avatar } from '@mui/material';
 import { Box } from '@mui/system';
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
+import rachana from './../assets/rachana.png';
 
 function Home(){
     const openInNewTab = url => {
         window.open(url, '_blank', 'noopener,noreferrer');
       };
-    return <div>
+    return <div className='homecontainer'>
         <Grid container direction={'column'} alignItems='center' justifyContent={'center'}>
-            <Grid item justifyContent='center' xs={4}>
-                <Typography variant='h4' align='center'>
-                    <div className='name'>
-
-                    <Typewriter
-                        onInit={(typewriter) => {
-                            typewriter.typeString("Hi! I am...").start();
-                        }} 
-                    />
-                    </div>
-                </Typography>
+            <Grid item xs={4} style={{padding:'20px'}}>
+                <Avatar alt="Rachana C" src={rachana} sx={{ width: 200, height: 200 }}/>
             </Grid>
+            
             <Grid item xs={4}>
                 <Typography variant='h1' align='center'> 
-                    <div className='name'>
-                        Rachana C
+                    <div >
+                        Rachana Chaudhari
                     </div>
                 </Typography>
             </Grid>
             <Grid item xs={4}>
-                <Typography variant='h6' align='center'>
+                
+                <Typography variant='h3' align='center'>
+                    <div className='name'>
+                        
                     <Typewriter
                         onInit={(typewriter) => {
-                            typewriter.typeString("I appreciate your visit. I hope I look good. ;P").start();
+                            typewriter.typeString("Software Engineer").start();
                         }}
                     />
+                    </div>
                 </Typography>
             </Grid>
             <Grid item paddingTop={'20px'}>

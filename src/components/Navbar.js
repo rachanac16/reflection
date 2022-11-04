@@ -3,7 +3,7 @@ import React from 'react';
 import {Link, useMatch, useResolvedPath} from 'react-router-dom';
 
 function Navbar(){
-    return <div>
+    return <div className='toolbarcontainer'>
         <Toolbar className='toolbar'>
             <CustomLink to={"/reflection"} className="navbar">Home</CustomLink>
             <CustomLink to={"/reflection/about"} className="navbar">About</CustomLink>
@@ -11,6 +11,7 @@ function Navbar(){
             <CustomLink to={"/reflection/experience"} className="navbar">Experience</CustomLink>
             {/* <CustomLink to={"/reflection/others"} className="navbar">Others</CustomLink> */}
         </Toolbar>
+        
     </div>;
 }
 
