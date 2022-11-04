@@ -6,8 +6,11 @@ function Navbar(){
     return <div className='toolbarcontainer'>
         <Toolbar className='toolbar'>
             <CustomLink to={"/reflection"} className="navbar">Home</CustomLink>
+            |
             <CustomLink to={"/reflection/about"} className="navbar">About</CustomLink>
+            |
             <CustomLink to={"/reflection/education"} className="navbar">Education</CustomLink>
+            |
             <CustomLink to={"/reflection/experience"} className="navbar">Experience</CustomLink>
             {/* <CustomLink to={"/reflection/others"} className="navbar">Others</CustomLink> */}
         </Toolbar>

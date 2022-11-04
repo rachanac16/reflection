@@ -13,7 +13,7 @@ function About(){
                 />
             </Typography>
         <Typography variant='h5' padding='100px'>
-            Determined and dedicated software developer to achieve success in creating, debugging, testing 
+            Determined and dedicated Software Engineer to achieve success in creating, debugging, testing 
             and deploying systems powered with AI to enhance life experiences in different aspects from 
             important day-to-day chores to pursuing a hobby. Cherishes a fast-paced innovative environment 
             with excellent interpersonal as well as communication skills.
