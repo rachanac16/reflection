@@ -1,25 +1,47 @@
-import * as React from 'react';
-import { Route, Routes } from 'react-router-dom';
-import Home from './pages/Home.js';
-import About from './pages/About.js';
-import Experience from './pages/Experience.js';
-import Education from './pages/Education.js';
-import Others from './pages/Others.js';
-import Navbar from './components/Navbar.js';
+import React, {useState} from 'react';
+import RobotoSlabBlack from './fonts/Roboto_Slab/static/RobotoSlabBlack.ttf';
+import {ThemeProvider, createTheme} from '@mui/material/styles';
+import Typography from '@mui/material/Typography';
+import Card from '@mui/material/Card';
+
+const theme = createTheme({
+  typography: {
+    fontFamily: [
+      'Lora'
+    ].join(','),
+  },
+});
 
 function App() {
   
-  return <div>
-    <Navbar/>
-    <div className='container'>
-      <Routes>
-        <Route path="/reflection" element={<Home/>}/>
-        <Route path="/reflection/about" element={<About/>}/>
-        <Route path="/reflection/experience" element={<Experience/>}/>
-        <Route path="/reflection/education" element={<Education/>}/>
-        <Route path="/reflection/others" element={<Others/>}/>
-      </Routes>
+  return <ThemeProvider theme={theme}>
+    <div className='main_container'>
+      <div className='name_container'>
+        <div className='name'>
+          <Typography variant="h2" align='center'>
+            Rachana C.
+          </Typography>
+        </div>
+      </div>
+      <div className='card_container'>
+      
+        <div className='card_item'>
+          <div className='card'>
+            Hello 1
+          </div>
+        </div>
+        <div className='card_item'>
+          <div className='card'>
+            Hello 2
+          </div>
+        </div>
+        <div className='card_item'>
+          <div className='card'>
+            Hello 3
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </ThemeProvider>
 }
 export default App;
