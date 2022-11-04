@@ -17,8 +17,9 @@ body {
 .container {
   /* background-color: rgb(232, 93, 93); */
   color: white;
-  height:85%;
+  height:100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: rgb(232, 93, 93);
@@ -33,10 +34,30 @@ body {
   background-position:right bottom; 
 }
 
-.toolbar {
-  flex-wrap: wrap;
+.toolbarcontainer{
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
-  background-color: black;
+  width: 100%;
+  /* flex-grow: 1; */
+  height: 80px;
+  position: fixed;
+  top: 0;
+
+  align-items: center;
+}
+
+.toolbar {
+  width: 100%;
+  justify-content: space-around;
+  background-color: transparent;
+}
+
+.homecontainer{
+  /* flex-grow: 11; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .name{
@@ -45,12 +66,16 @@ body {
 
 .navbar {
   text-decoration: none;
-  color: white;
+  color: rgb(26, 40, 65);
   font-size: x-large;
   font-weight: bolder;
   padding: 10%;
 }
 .navbar:hover {
   text-decoration: none;
-  color: rgb(232, 93, 93);
+  color: rgb(255, 255, 255);
+}
+.navbar:active {
+  text-decoration: none;
+  color: rgb(35, 93, 186);
 }
