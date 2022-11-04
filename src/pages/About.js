@@ -5,14 +5,14 @@ import Typewriter from 'typewriter-effect';
 
 function About(){
     return <div>
-        <Typography variant='h3' paddingLeft='100px'>
+        <Typography variant='h3' paddingLeft='150px'>
             <Typewriter
                 onInit={(typewriter) => {
                     typewriter.typeString("About").start();
                 }} 
                 />
             </Typography>
-        <Typography variant='h5' padding='100px'>
+        <Typography variant='h5' paddingLeft='150px' paddingRight='150px' paddingTop='50px'>
             Determined and dedicated Software Engineer to achieve success in creating, debugging, testing 
             and deploying systems powered with AI to enhance life experiences in different aspects from 
             important day-to-day chores to pursuing a hobby. Cherishes a fast-paced innovative environment 
