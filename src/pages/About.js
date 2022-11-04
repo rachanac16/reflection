@@ -1,12 +1,17 @@
 import { Box, Typography } from '@mui/material';
 import { getInitColorSchemeScript } from '@mui/system';
 import React from 'react';
+import Typewriter from 'typewriter-effect';
 
 function About(){
     return <div>
         <Typography variant='h3' paddingLeft='100px'>
-            About
-        </Typography>
+            <Typewriter
+                onInit={(typewriter) => {
+                    typewriter.typeString("About").start();
+                }} 
+                />
+            </Typography>
         <Typography variant='h5' padding='100px'>
             Determined and dedicated software developer to achieve success in creating, debugging, testing 
             and deploying systems powered with AI to enhance life experiences in different aspects from 

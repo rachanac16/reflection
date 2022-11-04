@@ -9,7 +9,7 @@ function Navbar(){
             <CustomLink to={"/reflection/about"} className="navbar">About</CustomLink>
             <CustomLink to={"/reflection/education"} className="navbar">Education</CustomLink>
             <CustomLink to={"/reflection/experience"} className="navbar">Experience</CustomLink>
-            <CustomLink to={"/reflection/others"} className="navbar">Others</CustomLink>
+            {/* <CustomLink to={"/reflection/others"} className="navbar">Others</CustomLink> */}
         </Toolbar>
     </div>;
 }

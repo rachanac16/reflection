@@ -2,6 +2,7 @@ import { Avatar, Table, TableBody, TableCell, TableHead, TableRow, Typography } 
 import React from 'react';
 import cornell from './../assets/cornell.png';
 import vjti from './../assets/vjti.png';
+import Typewriter from 'typewriter-effect';
 
 function createData(universityName, date, degree, relevantCoursework, icon) {
     return { universityName, date, degree, relevantCoursework, icon};
@@ -17,8 +18,20 @@ function Education(){
             <TableHead>
                 <TableRow>
                     <TableCell></TableCell>
-                    <TableCell style={{color:'white', width:'60%'}}><Typography variant='h3'>University Name</Typography></TableCell>
-                    <TableCell align="center" style={{color:'white'}}><Typography variant='h4'>Date</Typography></TableCell>
+                    <TableCell style={{color:'white', width:'60%'}}>
+                        <Typography variant='h3'>
+                            <Typewriter
+                            onInit={(typewriter) => {
+                                typewriter.typeString("Education").start();
+                            }} 
+                            />
+                        </Typography>
+                    </TableCell>
+                    <TableCell align="center" style={{color:'white'}}>
+                        <Typography variant='h4'>
+                            
+                            </Typography>
+                    </TableCell>
                 </TableRow>
             </TableHead>
             <TableBody>

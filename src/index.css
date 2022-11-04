@@ -43,10 +43,6 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
-.name:hover{
-  color: black;
-}
-
 .navbar {
   text-decoration: none;
   color: white;
@@ -58,4 +54,3 @@ body {
   text-decoration: none;
   color: rgb(232, 93, 93);
 }
-

@@ -6,20 +6,32 @@ import Experience from './pages/Experience.js';
 import Education from './pages/Education.js';
 import Others from './pages/Others.js';
 import Navbar from './components/Navbar.js';
+import { ThemeProvider, createTheme } from '@mui/material';
+import { palette } from '@mui/system';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#ffffff",
+    },
+  },
+});
 
 function App() {
   
-  return <div>
-    <Navbar/>
-    <div className='container'>
-      <Routes>
-        <Route path="/reflection" element={<Home/>}/>
-        <Route path="/reflection/about" element={<About/>}/>
-        <Route path="/reflection/experience" element={<Experience/>}/>
-        <Route path="/reflection/education" element={<Education/>}/>
-        <Route path="/reflection/others" element={<Others/>}/>
-      </Routes>
+  return <ThemeProvider theme={theme}>
+    <div>
+      <Navbar/>
+      <div className='container'>
+        <Routes>
+          <Route path="/reflection" element={<Home/>}/>
+          <Route path="/reflection/about" element={<About/>}/>
+          <Route path="/reflection/experience" element={<Experience/>}/>
+          <Route path="/reflection/education" element={<Education/>}/>
+          {/* <Route path="/reflection/others" element={<Others/>}/> */}
+        </Routes>
+      </div>
     </div>
-  </div>
+  </ThemeProvider>
 }
 export default App;
