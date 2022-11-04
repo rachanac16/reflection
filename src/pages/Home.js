@@ -31,7 +31,7 @@ function Home(){
                         
                     <Typewriter
                         onInit={(typewriter) => {
-                            typewriter.typeString("Software Engineer").start();
+                            typewriter.typeString("Software Engineer :)").start();
                         }}
                     />
                     </div>
