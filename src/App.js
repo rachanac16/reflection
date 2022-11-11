@@ -25,16 +25,15 @@ function App() {
       <div className='container'>
         <Navbar/>
         <div className='restrictcontainer'>
-
-        <div className='homecontainer'> 
-          <Routes>
-            <Route path="/reflection" element={<Home/>}/>
-            <Route path="/reflection/about" element={<About/>}/>
-            <Route path="/reflection/experience" element={<Experience/>}/>
-            <Route path="/reflection/education" element={<Education/>}/>
-            {/* <Route path="/reflection/others" element={<Others/>}/> */}
-          </Routes>
-        </div>
+          <div className='appcontainer'> 
+            <Routes>
+              <Route path="/reflection" element={<Home/>}/>
+              <Route path="/reflection/about" element={<About/>}/>
+              <Route path="/reflection/experience" element={<Experience/>}/>
+              <Route path="/reflection/education" element={<Education/>}/>
+              {/* <Route path="/reflection/others" element={<Others/>}/> */}
+            </Routes>
+          </div>
 
         </div>
 
