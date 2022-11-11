@@ -14,6 +14,18 @@ body {
   background-color: black;
 }
 
+@keyframes changeGradient {
+  0%{
+    background-position:left bottom;
+  }
+  50%{
+    background-position:right bottom;
+  }
+  100%{
+    background-position:left bottom;
+  }
+}
+
 .container {
   /* background-color: rgb(232, 93, 93); */
   color: white;
@@ -27,9 +39,9 @@ body {
     /* Old browsers */
     background: linear-gradient(to right, rgb(232, 93, 93) 10%, rgb(91, 173, 231) 90%);
     background-size: 200% 100%;
-    background-position:left bottom;
     margin-left:10px;
     transition:all 2s ease;
+    animation: changeGradient 5s infinite;
 }
 .container:hover{
   background-position:right bottom; 
@@ -69,16 +81,16 @@ body {
 
 .navbar {
   text-decoration: none;
-  color: rgb(26, 40, 65);
+  color: rgb(255, 255, 255);
   font-size: x-large;
   font-weight: bolder;
   padding: 10%;
 }
 .navbar:hover {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(26, 40, 65);
 }
 .navbar:active {
   text-decoration: none;
-  color: rgb(35, 93, 186);
+  color: rgb(26, 40, 65);
 }
