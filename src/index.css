@@ -79,8 +79,19 @@ body {
   font-family: 'Courier New', Courier, monospace;
 }
 
+.restrictcontainer{
+  position: fixed;
+  top: 80px;
+  /* display: block; */
+  overflow: scroll;
+  height: 80%;
+}
+
 .navbar {
   text-decoration: none;
+  padding-bottom: 15px;
+  border-bottom-style: solid;
+  border-bottom-width: 3.1px;
   color: rgb(255, 255, 255);
   font-size: x-large;
   font-weight: bolder;

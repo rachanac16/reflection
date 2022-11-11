@@ -24,6 +24,8 @@ function App() {
       
       <div className='container'>
         <Navbar/>
+        <div className='restrictcontainer'>
+
         <div className='homecontainer'> 
           <Routes>
             <Route path="/reflection" element={<Home/>}/>
@@ -33,7 +35,9 @@ function App() {
             {/* <Route path="/reflection/others" element={<Others/>}/> */}
           </Routes>
         </div>
-        
+
+        </div>
+
       </div>
     </div>
   </ThemeProvider>
