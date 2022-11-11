@@ -1,23 +1,24 @@
 import { Box, Typography } from '@mui/material';
-import { getInitColorSchemeScript } from '@mui/system';
 import React from 'react';
 import Typewriter from 'typewriter-effect';
+import MyIntro from '../components/MyIntro';
 
 function About(){
-    return <div>
-        <Typography variant='h3' paddingLeft='150px'>
-            <Typewriter
-                onInit={(typewriter) => {
-                    typewriter.typeString("About").start();
-                }} 
-                />
+    return <div className='home_container'>
+        <div className='container_left slide_from_right'>
+            <MyIntro shouldAnimate={false}/>
+        </div>
+        <div className='container_right about_container slide_from_left'>
+            <Typography variant='h3' align="center">
+                About
             </Typography>
-        <Typography variant='h5' paddingLeft='150px' paddingRight='150px' paddingTop='50px'>
-            Determined and dedicated Software Engineer to achieve success in creating, debugging, testing 
-            and deploying systems powered with AI to enhance life experiences in different aspects from 
-            important day-to-day chores to pursuing a hobby. Cherishes a fast-paced innovative environment 
-            with excellent interpersonal as well as communication skills.
-        </Typography>
+            <Typography variant='h5' align="justify">
+                Determined and dedicated Software Engineer to achieve success in creating, debugging, testing 
+                and deploying systems powered with AI to enhance life experiences in different aspects from 
+                important day-to-day chores to pursuing a hobby. Cherishes a fast-paced innovative environment 
+                with excellent interpersonal as well as communication skills.
+            </Typography>
+        </div>
     </div>;
 }
 
