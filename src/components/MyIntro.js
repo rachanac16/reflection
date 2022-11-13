@@ -31,13 +31,13 @@ export default function MyIntro({shouldAnimate}){
                             <div className='name'>
                             <Typewriter
                             onInit={(typewriter) => {
-                                typewriter.typeString("Software Engineer :)").start();
+                                typewriter.typeString("Software Engineer").start();
                             }}
                             
                         />
                            </div> :
                             <div className='name'>
-                            Software Engineer :)
+                            Software Engineer
                            </div> 
                         }
                         
