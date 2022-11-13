@@ -9,7 +9,7 @@ function About(){
             <MyIntro shouldAnimate={false}/>
         </div>
         <div className='container_right about_container slide_from_left'>
-            <Typography variant='h3' align="center">
+            <Typography variant='h3' align="center" paddingBottom={"10px"}>
                 About
             </Typography>
             <Typography variant='h5' align="justify">
