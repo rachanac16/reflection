@@ -72,6 +72,11 @@ body {
   background-position: left top;
 }
 
+.MuiButtonBase-root:hover{
+  border-color: rgb(25, 40, 65);
+  background-color: rgb(25, 40, 65);
+  color: rgb(25, 40, 65);
+}
 
 .container {
   /* background-color: rgb(232, 93, 93); */

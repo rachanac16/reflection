@@ -59,7 +59,7 @@ function Education(){
                     <Typography variant='h4' align='center'>
                         {rows[universityIndex].degree}
                     </Typography>
-                    <Typography variant='h6' align='center'>
+                    <Typography variant='h5' align='center'>
                         {rows[universityIndex].date}
                     </Typography>
                 </div>
@@ -90,7 +90,8 @@ function Education(){
                     </div>
                 </div>
             </div>
-        </div>:
+        </div>
+        :
         <div className='container_full'>
             <div className='education_table'>
             <Table sx={{ maxWidth: '100%'}} aria-label="simple table">
@@ -115,16 +116,21 @@ function Education(){
                         <Avatar src={row.icon} sx={{height:'100px', width:'100px'}}/>
                     </TableCell>
                         <TableCell component="th" scope="row" style={{color:'white'}}>
-                            <Typography variant='h5'>
+                            <Typography variant='h4'>
                                 {row.universityName}
                             </Typography>
-                            <Typography variant='h6'>
+                            <Typography variant='h5'>
                                 {row.degree}
                             </Typography>
                             <Typography variant='h6' paddingBottom={"10px"}>
                                 {row.date}
                             </Typography>
-                            <Button variant="outlined" onClick={()=>onLearnMoreClick(row.universityIndex)}>Learn More</Button>
+                            <Button variant="outlined" onClick={()=>onLearnMoreClick(row.universityIndex)} sx={{
+                            ':hover': {
+                            bgcolor: 'secondary.main', // theme.palette.primary.main
+                            color: 'white',
+                            },
+                        }}>Learn More</Button>
                         </TableCell>
                     
                     </TableRow>))
