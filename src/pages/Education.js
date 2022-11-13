@@ -96,7 +96,7 @@ function Education(){
             <Table sx={{ maxWidth: '100%'}} aria-label="simple table">
                 <TableHead>
                     <TableRow>
-                        <TableCell style={{color:'white', width:'60%'}}>
+                        <TableCell style={{color:'white', width:'60%'}} colSpan={"2"}>
                             <Typography variant='h3'>
                                 <Typewriter
                                 onInit={(typewriter) => {
@@ -111,7 +111,9 @@ function Education(){
                 {rows.map((row) => (
                     <TableRow
                     key={row.universityIndex}
-                    >
+                    >   <TableCell>
+                        <Avatar src={row.icon} sx={{height:'100px', width:'100px'}}/>
+                    </TableCell>
                         <TableCell component="th" scope="row" style={{color:'white'}}>
                             <Typography variant='h5'>
                                 {row.universityName}
@@ -122,7 +124,7 @@ function Education(){
                             <Typography variant='h6' paddingBottom={"10px"}>
                                 {row.date}
                             </Typography>
-                            <Button color='secondary' variant="outlined" onClick={()=>onLearnMoreClick(row.universityIndex)}>Learn More</Button>
+                            <Button variant="outlined" onClick={()=>onLearnMoreClick(row.universityIndex)}>Learn More</Button>
                         </TableCell>
                     
                     </TableRow>))
