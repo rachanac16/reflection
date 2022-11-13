@@ -54,6 +54,7 @@ body {
   width: inherit;
   height: inherit;
 }
+
 .body:hover{
   background-position:right bottom; 
 }
@@ -112,8 +113,7 @@ body {
 
 .container_right{
   flex:50%;
-  justify-content: center;
-  align-items: center;
+  position: relative;
 }
 
 .name{
@@ -155,18 +155,65 @@ body {
 
 } */
 
-.university_details{
-  background-color: rgb(0,0,0, 0.5);
-  border-radius: 1%;
+.university_details_left{
   position: relative;
   display: flex;
   margin: 10px 50px 10px 10px;
   padding: 20px 20px 20px 20px;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: left;
   align-items: center;
 }
 
-.relevant_coursework{
-  padding: 10px;
+.right_dim{
+  height: 100%;
+  width: 100%;
+}
+
+.university_details_right{
+  /* position: relative; */
+  display: flex;
+  /* margin: 10px 50px 10px 10px;
+  padding: 20px 20px 20px 20px; */
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 100%;
+}
+
+.flip-card{
+  height: inherit;
+  width: inherit;
+}
+
+.flip-card:hover .university_details_right {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+  perspective: 1000px;
+  background-color: rgb(0,0,0, 0.5);
+  border-radius: 1%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 100%;
+}
+
+.flip-card-front{
+  margin: 10px 50px 10px 10px;
+  padding: 20px 20px 20px 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  margin: 10px 10px 10px 50px;
+  padding: 20px 20px 20px 20px;
 }
