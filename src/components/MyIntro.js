@@ -12,7 +12,7 @@ export default function MyIntro({shouldAnimate}){
         window.open(url, '_blank', 'noopener,noreferrer');
     };
 
-    return <div>
+    return <div class="intro_container">
         <Grid container direction={'column'} alignItems='center' justifyContent={'center'}>
                 <Grid item xs={4}>
                     <Typography variant='h1' align='center'> 

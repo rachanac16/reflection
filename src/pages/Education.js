@@ -67,7 +67,7 @@ function Education(){
             <div className='container_right right_dim'>
                 <div className="flip-card">
                     <div className='university_details_right'>   
-                        <div className='flip-card-front'>
+                        <div className='flip-card-front slide_from_left'>
                             <Typography variant='h3'>
                                 Coursework
                             </Typography>

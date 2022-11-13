@@ -17,6 +17,11 @@ const theme = createTheme({
       main:"#1A2841"
     }
   },
+  typography: {
+    fontFamily: [
+      'Regular'
+    ].join(','),
+  },
 });
 
 function App() {
@@ -24,7 +29,7 @@ function App() {
   const [prevComponent, setPrevComponent] = useState("");
 
   return <ThemeProvider theme={theme}>
-    <div>
+    <div className='app_outside'>
       
       <div className='container'>
         <Navbar/>
