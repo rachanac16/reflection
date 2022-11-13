@@ -4,7 +4,7 @@ import MyIntro from '../components/MyIntro';
 
 function Home(prevComponent){
 
-    return <div className='home_container'>
+    return <div className='home_container' id='home'>
         <div className='container_left'>
             <MyAvatar/>
         </div>

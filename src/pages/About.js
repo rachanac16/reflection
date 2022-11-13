@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect';
 import MyIntro from '../components/MyIntro';
 
 function About(){
-    return <div className='home_container'>
+    return <div className='home_container' id="about">
         <div className='container_left slide_from_right'>
             <MyIntro shouldAnimate={false}/>
         </div>

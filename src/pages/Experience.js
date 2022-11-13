@@ -42,7 +42,7 @@ function Experience(){
         setLearnMore(false);
     }
 
-    return <div style={{height:"100%", width:"100%", justifyContent:"center", alignItems:"center", display:"flex"}}>
+    return <div style={{height:"100%", width:"100%", justifyContent:"center", alignItems:"center", display:"flex"}} id="experience">
         {learnMore?<div className='home_container'>
             <div className='container_left university_details_left'>
                 <div style={{justifyContent:"space-around", display:"flex", alignItems:"center", width:"100%", paddingBottom:"10px"}}>
