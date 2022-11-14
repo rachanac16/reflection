@@ -14,7 +14,7 @@ function About(){
             </Typography>
             <Typography variant='h5' align="justify">
                 Determined and dedicated Software Engineer to achieve success in creating, debugging, testing 
-                and deploying systems powered with AI to enhance life experiences in different aspects from 
+                and deploying systems powered with AI to enhance life experiences in different aspects ranging from 
                 important day-to-day chores to pursuing a hobby. Cherishes a fast-paced innovative environment 
                 with excellent interpersonal as well as communication skills.
             </Typography>
