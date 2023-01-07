@@ -104,7 +104,7 @@ function Experience(){
             <TableHead>
                 <TableRow>
                     <TableCell style={{color:'white', paddingLeft:'50px'}} colSpan={"3"}>
-                        <Typography variant='h3' ali>
+                        <Typography variant='h3'>
                             <Typewriter
                             onInit={(typewriter) => {
                                 typewriter.typeString("Experience").start();

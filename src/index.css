@@ -1,3 +1,50 @@
+/* CSS HEX */
+/* --rich-black-fogra-39: #08090aff;
+--purple-navy: #655a7cff;
+--mauve: #e0b3fdff;
+--yellow-pantone: #fde12dff;
+--white: #ffffffff; */
+
+/* CSS HSL */
+/* --rich-black-fogra-39: hsla(210, 11%, 4%, 1);
+--purple-navy: hsla(259, 16%, 42%, 1);
+--mauve: hsla(276, 95%, 85%, 1);
+--yellow-pantone: hsla(52, 98%, 58%, 1);
+--white: hsla(0, 0%, 100%, 1); */
+
+/* SCSS HEX */
+/* $rich-black-fogra-39: #08090aff;
+$purple-navy: #655a7cff;
+$mauve: #e0b3fdff;
+$yellow-pantone: #fde12dff;
+$white: #ffffffff; */
+
+/* SCSS HSL */
+/* $rich-black-fogra-39: hsla(210, 11%, 4%, 1);
+$purple-navy: hsla(259, 16%, 42%, 1);
+$mauve: hsla(276, 95%, 85%, 1);
+$yellow-pantone: hsla(52, 98%, 58%, 1);
+$white: hsla(0, 0%, 100%, 1); */
+
+/* SCSS RGB */
+/* $rich-black-fogra-39: rgba(8, 9, 10, 1);
+$purple-navy: rgba(101, 90, 124, 1);
+$mauve: rgba(224, 179, 253, 1);
+$yellow-pantone: rgba(253, 225, 45, 1);
+$white: rgba(255, 255, 255, 1); */
+
+/* SCSS Gradient */
+/* $gradient-top: linear-gradient(0deg, #08090aff, #655a7cff, #e0b3fdff, #fde12dff, #ffffffff);
+$gradient-right: linear-gradient(90deg, #08090aff, #655a7cff, #e0b3fdff, #fde12dff, #ffffffff);
+$gradient-bottom: linear-gradient(180deg, #08090aff, #655a7cff, #e0b3fdff, #fde12dff, #ffffffff);
+$gradient-left: linear-gradient(270deg, #08090aff, #655a7cff, #e0b3fdff, #fde12dff, #ffffffff);
+$gradient-top-right: linear-gradient(45deg, #08090aff, #655a7cff, #e0b3fdff, #fde12dff, #ffffffff);
+$gradient-bottom-right: linear-gradient(135deg, #08090aff, #655a7cff, #e0b3fdff, #fde12dff, #ffffffff);
+$gradient-top-left: linear-gradient(225deg, #08090aff, #655a7cff, #e0b3fdff, #fde12dff, #ffffffff);
+$gradient-bottom-left: linear-gradient(315deg, #08090aff, #655a7cff, #e0b3fdff, #fde12dff, #ffffffff);
+$gradient-radial: radial-gradient(#08090aff, #655a7cff, #e0b3fdff, #fde12dff, #ffffffff);
+  */
+
 * {
   box-sizing: border-box;
   font-family: 'Regular';
@@ -15,6 +62,7 @@ body,
 #root,
 #root>div {
   height: 100%;
+  width: 100%;
   margin: 0;
 }
 
@@ -68,20 +116,22 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
-  background: linear-gradient(to right, rgb(232, 93, 93) 10%, rgb(91, 173, 231) 90%);
+  background: #273043;
   background-position: left top;
 }
 
 .MuiButtonBase-root:hover{
-  border-color: rgb(25, 40, 65);
-  background-color: rgb(25, 40, 65);
-  color: rgb(25, 40, 65);
+  border-color: #ADBAEE;
+  background-color: #ADBAEE;
+  color: #ADBAEE;
 }
 
 .container {
   /* background-color: rgb(232, 93, 93); */
   width: inherit;
   height: inherit;
+  /* color: #273043;
+  background: white; */
 }
 
 .body:hover {
@@ -94,17 +144,19 @@ body {
   height: 10%;
   position: fixed;
   top: 0;
+  z-index: 1;
 }
 
 .toolbar {
   width: 100%;
   justify-content: space-around;
-  background-color: transparent;
-  color: rgb(26, 40, 65);
+  background-color: rgb(39, 48, 67);
+  /* background-color: transparent; */
+  /* color: rgb(26, 40, 65); */
 }
 
 .about_container {
-  background-color: rgb(0, 0, 0, 0.5);
+  background-color: rgb(39, 48, 67, 0.5);
   border-radius: 1%;
   position: relative;
   margin: 10px 50px 10px 10px;
@@ -133,8 +185,28 @@ body {
   height: 100%;
   justify-content: center;
   align-items: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
+.project_container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 5% 5% 5%;
+}
+
+.text-style{
+  font-size: 72px;
+  background: -webkit-linear-gradient(right, #5bade7, #e85d5d);
+  -webkit-background-clip: text;
+  
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .container_left {
   flex: 50%;
   position: relative;
@@ -162,25 +234,41 @@ body {
   border-bottom-style: solid;
   border-bottom-width: 3.1px;
   color: rgb(255, 255, 255);
+  padding: 10%;
+}
+
+.font-large{
   font-size: x-large;
   font-weight: bolder;
-  padding: 10%;
 }
 
 .navbar:hover {
   text-decoration: none;
-  color: rgb(26, 40, 65);
+  color: #ADBAEE;
 }
 
 .active .navbar {
   text-decoration: none;
-  color: rgb(26, 40, 65);
+  color: #ADBAEE;
 }
 
-/* 
-.navbar .active {
+.navdrawer {
+  text-decoration: none;
+  /* padding-bottom: 15px;
+  border-bottom-style: solid;
+  border-bottom-width: 3.1px; */
+  color: rgb(255, 255, 255);
+}
 
-} */
+.navdrawer:hover {
+  text-decoration: none;
+  color: #ADBAEE;
+}
+
+.active .navdrawer {
+  text-decoration: none;
+  color: #ADBAEE;
+}
 
 .university_details_left {
   position: relative;

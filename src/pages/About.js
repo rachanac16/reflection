@@ -6,12 +6,14 @@ import MyIntro from '../components/MyIntro';
 function About(){
     return <div className='home_container' id="about">
         <div className='container_left slide_from_right'>
-            <MyIntro shouldAnimate={false}/>
+            <Typography variant='h3' align="center" paddingBottom={"10px"}>
+                About Me
+            </Typography>
         </div>
         <div className='container_right about_container slide_from_left'>
-            <Typography variant='h3' align="center" paddingBottom={"10px"}>
+            {/* <Typography variant='h3' align="center" paddingBottom={"10px"}>
                 About
-            </Typography>
+            </Typography> */}
             <Typography variant='h5' align="justify">
                 Determined and dedicated Software Engineer to achieve success in creating, debugging, testing 
                 and deploying systems powered with AI to enhance life experiences in different aspects ranging from 

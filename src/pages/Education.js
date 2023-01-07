@@ -34,7 +34,7 @@ function Education(){
         setLearnMore(false);
     }
 
-    return <div style={{height:"100%", width:"100%", justifyContent:"center", alignItems:"center", display:"flex"}} id="education">
+    return <div style={{height:"fit-content", width:"100%", justifyContent:"center", alignItems:"center", display:"flex"}} id="education">
         {learnMore?
         <div className='home_container'>
             <div className='container_left university_details_left'>
