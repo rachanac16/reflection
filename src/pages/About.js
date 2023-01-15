@@ -8,20 +8,20 @@ function About(props){
             <Grid item xs={4} className="main-header">
                 ABOUT ME
             </Grid>
-            <Grid item container direction="column" xs={8} className="sub-header padding10">
-                <Grid item xs={4}>
+            <Grid item container direction="column" xs={8} className="sub-header padding10" spacing={2}>
+                <Grid item xs={3}>
                     I am a dedicated Software Engineer determined to achieve success in creating, debugging, testing 
                     and deploying systems powered with AI to enhance life experiences in different aspects ranging from 
                     important day-to-day chores to pursuing a hobby. I cherish a fast-paced innovative environment 
                     with excellent interpersonal as well as communication skills.
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={3}>
                     I am always looking for inspiration in the fast paced lives led by technology and how I can assist without handicapping people from achieving goals.
                 </Grid>
-                <Grid item xs={1} className="center-flex width100">
+                <Grid item xs={2} className="center-flex width100">
                     <IconButton onClick={()=>props.scrollTo("#home")}><KeyboardDoubleArrowDownIcon color="buttonColor" sx={{ fontSize: "30px", "&:hover": { color: "#c0b3f3" }}}/></IconButton>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={4}>
                 </Grid>
             </Grid>
         </Grid>
