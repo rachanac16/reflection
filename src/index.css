@@ -9,6 +9,24 @@ body,
 }
 
 :root{
-  --primary: #ffbd59;
+  --primary: #c0b3f3;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+a:hover{
+  color: var(--primary);
+}
+
+button{
+  color: black;
+}
+
+
+button:hover{
+  color: var(--primary);
+}
