@@ -5,6 +5,7 @@ import About from './pages/About';
 import { hover } from '@testing-library/user-event/dist/hover';
 import Home from './pages/Home';
 import Education from './pages/Education';
+import Experience from './pages/Experience';
 
 const theme = createTheme({
   palette: {
@@ -20,15 +21,13 @@ const theme = createTheme({
     }
   },
   typography: {
-    fontFamily: [
-      'Primary', 'Secondary'
-    ].join(','),
+    fontFamily:'Cormorant Garamond, serif'
   },
 });
 
 const scrollTo = (ref) => {
   const anchor = document.querySelector(ref);
-  anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function App() {
@@ -38,6 +37,7 @@ function App() {
       <Home scrollTo={scrollTo}/>
       <About scrollTo={scrollTo}/>
       <Education scrollTo={scrollTo}/>
+      <Experience scrollTo={scrollTo}/>
     </div>
     </ThemeProvider>
   );

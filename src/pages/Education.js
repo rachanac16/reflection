@@ -19,21 +19,17 @@ function Education(props){
         setLearnMore(false);
     }
 
-    return <Grid container direction="column" className='App-container' id="education">
-                <Grid item container xs={2} md={2} lg={2}>
-                    <Grid item container xs={12} md={6} lg={6} className="bg-white">
-                        <Navbar scrollTo={props.scrollTo}/>
-                    </Grid>
-                    <Grid item xs={12} md={6} lg={6} className="main-header center-flex">
-                            EDUCATION
-                    </Grid>
+    return <Grid container className='Education-container' id="education">
+                <Grid item container xs={12} md={6} lg={6} className="bg-white" p={5}>
+                    <Navbar scrollTo={props.scrollTo}/>
                 </Grid>
-                <Grid item container xs={9} md={9} lg={9} className="bg-white" spacing={2}>
-                    {
-                        EducationData.map((educationRecord, universityIndex)=>(<EducationRecord record={educationRecord}/>))
-                    }
+                <Grid item xs={12} md={6} lg={6} className="main-header center-flex" p={5}>
+                    EDUCATION
                 </Grid>
-                <Grid item container xs={1} md={1} lg={1} className="center-flex width100">
+                {
+                    EducationData.map((educationRecord, universityIndex)=>(<EducationRecord record={educationRecord}/>))
+                }
+                <Grid item container xs={12} md={12} lg={12} className="center-flex" p={8}>
                     <IconButton onClick={()=>props.scrollTo("#experience")}><KeyboardDoubleArrowDownIcon color="buttonColor" sx={{ fontSize: "30px", "&:hover": { color: "#ffffff" }}}/></IconButton>
                 </Grid>
             </Grid>;

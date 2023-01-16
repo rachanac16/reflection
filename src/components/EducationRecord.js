@@ -5,7 +5,7 @@ function EducationRecord(props){
 
     const [record, setRecord] = useState(props.record);
 
-    return <Grid item container xs={12} md={6} lg={6}>
+    return <Grid item container xs={12} md={6} lg={6} className="bg-white">
                 <Grid item container direction="column" xs={0} md={1} lg={1} className="bg-primary">
                     <Grid item xs={2} md={2} lg={2} className="bg-white"></Grid>
                     <Grid item xs={10} md={8} lg={8}></Grid>
@@ -27,17 +27,22 @@ function EducationRecord(props){
                     <Grid item className='sub-header-2'>
                         {record.universityName}
                     </Grid>
-                    <Grid item className='content'>
+                    <Grid item className='content-italic color-grey'>
                         {record.date}
                     </Grid>
                     <Grid item className='content'>
                         {record.degree}
                     </Grid>
                     <Grid item className='content'>
+                        CGPA: {record.cgpa}
+                    </Grid>
+                    <Grid item className='content'>
                         {record.desc}
                     </Grid>
-                    <Grid item className="content-small">
-                        RELEVENT COURSEWORK <br/>
+                    <Grid item className="content">
+                        <div className='content-italic'>
+                        RELEVENT COURSEWORK
+                        </div> 
                         <ul>
                             {record.relevantCoursework.map((course)=>(
                                 <li>{course}</li>
