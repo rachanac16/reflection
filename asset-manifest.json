@@ -1,25 +1,20 @@
 {
   "files": {
-    "main.css": "/reflection/static/css/main.166ec04d.css",
-    "main.js": "/reflection/static/js/main.0d2ae396.js",
+    "main.css": "/reflection/static/css/main.52f79b7f.css",
+    "main.js": "/reflection/static/js/main.a3e6af49.js",
     "static/js/787.892d4448.chunk.js": "/reflection/static/js/787.892d4448.chunk.js",
-    "static/media/onlineprintshop.jpg": "/reflection/static/media/onlineprintshop.275d353e93a20535ba98.jpg",
-    "static/media/rachana.png": "/reflection/static/media/rachana.ac490814217f9123da8d.png",
-    "static/media/skinscanapi.jpg": "/reflection/static/media/skinscanapi.a3a52c292c81f66da433.jpg",
-    "static/media/MIB.jpg": "/reflection/static/media/MIB.d3517f406bd4a511dec5.jpg",
-    "static/media/deesha.png": "/reflection/static/media/deesha.a6a35123a3435e48c345.png",
-    "static/media/PlayfairDisplayRegular.ttf": "/reflection/static/media/PlayfairDisplayRegular.27705d9c43e8c36b1abd.ttf",
-    "static/media/jpmc.png": "/reflection/static/media/jpmc.b6ed2d0f80da462f73e1.png",
-    "static/media/cornell.png": "/reflection/static/media/cornell.e7287029b32430e5d59d.png",
-    "static/media/otb.png": "/reflection/static/media/otb.44f5a3bce8c37714c701.png",
-    "static/media/vjti.png": "/reflection/static/media/vjti.58f8fd7d9e3f1d60e56a.png",
+    "static/media/cornell.jpg": "/reflection/static/media/cornell.45e7824f0f4edd2d54bb.jpg",
+    "static/media/coverpage2.jpeg": "/reflection/static/media/coverpage2.1c97cbe3a4f6ef018ebe.jpeg",
+    "static/media/jpmc.png": "/reflection/static/media/jpmc.c903f0382bc86b63ae55.png",
+    "static/media/vjti.jpg": "/reflection/static/media/vjti.04f9f7d6e2f9505db4ee.jpg",
+    "static/media/about.jpg": "/reflection/static/media/about.ebed111cc16ceda367d6.jpg",
     "index.html": "/reflection/index.html",
-    "main.166ec04d.css.map": "/reflection/static/css/main.166ec04d.css.map",
-    "main.0d2ae396.js.map": "/reflection/static/js/main.0d2ae396.js.map",
+    "main.52f79b7f.css.map": "/reflection/static/css/main.52f79b7f.css.map",
+    "main.a3e6af49.js.map": "/reflection/static/js/main.a3e6af49.js.map",
     "787.892d4448.chunk.js.map": "/reflection/static/js/787.892d4448.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.166ec04d.css",
-    "static/js/main.0d2ae396.js"
+    "static/css/main.52f79b7f.css",
+    "static/js/main.a3e6af49.js"
   ]
 }
