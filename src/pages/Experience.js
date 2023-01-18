@@ -60,11 +60,11 @@ function Experience(props){
                 </Grid>
                 <Grid item container xs={12} md={12} lg={12} className="bg-white">                       
                     <Grid item container xs={12} md={12} lg={12} className='content center-flex letter-spacing' p={2}>
-                        <Grid item className="divider height100" xs={1} md={3} lg={2}></Grid>
+                        <Grid item className="divider height100" xs={2} md={2} lg={2}></Grid>
                         {/* <Grid item container className='content-big center-flex' spacing={0}></Grid>
                         <Grid item container className='content-big center-flex' spacing={0}></Grid>
                         <Grid item container className='content-big center-flex' spacing={0}></Grid> */}
-                        <Grid item container xs={10} md={6} lg={5} className='content-big center-flex' spacing={0}>
+                        <Grid item container xs={10} md={5} lg={5} className='content-big center-flex' spacing={0}>
                             {showArrowLeft &&
                                 <Grid item xs={1} md={1} lg={1} className='content-big center-flex'>
                                         <IconButton onClick={()=>decreaseCurrentRecord()}>
@@ -87,7 +87,7 @@ function Experience(props){
                                     }
                             </Grid>
                         </Grid>
-                        <Grid item className="divider height100" xs={1} md={3} lg={5}></Grid>
+                        <Grid item className="divider height100" xs={0} md={5} lg={5}></Grid>
                     </Grid>
                 </Grid>
                 <ExperienceRecord id={currentRecord}/>

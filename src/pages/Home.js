@@ -13,8 +13,8 @@ function Home(props){
     };
 
     return <Grid container className="App-container" id="home">
-            <Grid item xs={0} md={1} lg={2}></Grid>
-            <Grid item container direction="column" xs={12} md={4} lg={4} className="bg-white">
+            <Grid item xs={0} md={1} lg={1} className="bg-primary"></Grid>
+            <Grid item container direction="column" xs={12} md={5} lg={5} className="bg-white">
               <Grid item container xs={0} md={2} lg={2}>
                 <Grid item xs={0} md={6} lg={6} className="bg-primary">
 
@@ -34,14 +34,14 @@ function Home(props){
                 </Grid>
               </Grid>
             </Grid>
-            <Grid item container direction="column" xs={12} md={7} lg={6} className="minimal-block-header">
-              <Grid item container xs={6} spacing={2} className='main-header display-flex-end'>
+            <Grid item container direction="column" xs={12} md={6} lg={6} className="minimal-block-header">
+              <Grid item xs={4} md={5} lg={5} className='main-header display-flex-end'>
                 RACHANA CHAUDHARI
               </Grid>
-              <Grid item container xs={1}>
+              <Grid item xs={1} md={1} lg={1} pt={1}>
                 <Navbar scrollTo={props.scrollTo} id="homelink"/>
               </Grid>
-              <Grid item xs={5} className="display-flex-start">
+              <Grid item xs={4} md={6} lg={6} className="display-flex-start">
                 <IconButton color="buttonColor" onClick={()=>openInNewTab("https://www.linkedin.com/in/rachana-chaudhari/")}><LinkedInIcon sx={{ fontSize: "30px", "&:hover": { color: "#c0b3f3" } }}/></IconButton>
                 <IconButton color="buttonColor" onClick={()=>openInNewTab("https://github.com/rachanac16")}><GitHubIcon sx={{ fontSize: "30px", "&:hover": { color: "#c0b3f3" } }}/></IconButton>
                 <IconButton color="buttonColor" onClick={()=>openInNewTab("mailto:rc774@cornell.edu")}><EmailIcon sx={{ fontSize: "30px", "&:hover": { color: "#c0b3f3" } }}/></IconButton>

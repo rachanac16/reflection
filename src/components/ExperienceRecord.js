@@ -49,7 +49,7 @@ function ExperienceRecord(props){
                         </div> 
                         <ul>
                             {record.description.map((course)=>(
-                                <li style={{paddingBottom:10, width:"50%"}}>{course}</li>
+                                <li style={{paddingBottom:'5px', width:"70%"}}>{course}</li>
                             ))}
                         </ul>
                     </Grid>
