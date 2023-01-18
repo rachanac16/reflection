@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/reflection/static/css/main.c3ed2ec5.css",
-    "main.js": "/reflection/static/js/main.2870173b.js",
+    "main.css": "/reflection/static/css/main.b27599bd.css",
+    "main.js": "/reflection/static/js/main.4a9aa7ad.js",
     "static/js/787.892d4448.chunk.js": "/reflection/static/js/787.892d4448.chunk.js",
     "static/media/onlineprintshop.jpg": "/reflection/static/media/onlineprintshop.275d353e93a20535ba98.jpg",
     "static/media/skinscanapi.jpg": "/reflection/static/media/skinscanapi.a3a52c292c81f66da433.jpg",
     "static/media/MIB.jpg": "/reflection/static/media/MIB.d3517f406bd4a511dec5.jpg",
+    "static/media/coverpage2.jpeg": "/reflection/static/media/coverpage2.ea63a2814992b67948ed.jpeg",
     "static/media/cornell.jpg": "/reflection/static/media/cornell.45e7824f0f4edd2d54bb.jpg",
-    "static/media/coverpage2.jpeg": "/reflection/static/media/coverpage2.1c97cbe3a4f6ef018ebe.jpeg",
     "static/media/jpmc.png": "/reflection/static/media/jpmc.0032472ab2bdf8867298.png",
     "static/media/vjti.jpg": "/reflection/static/media/vjti.04f9f7d6e2f9505db4ee.jpg",
     "static/media/divider.png": "/reflection/static/media/divider.57e5eb7ffeafeb3fe5dd.png",
     "static/media/about.jpg": "/reflection/static/media/about.ebed111cc16ceda367d6.jpg",
     "index.html": "/reflection/index.html",
-    "main.c3ed2ec5.css.map": "/reflection/static/css/main.c3ed2ec5.css.map",
-    "main.2870173b.js.map": "/reflection/static/js/main.2870173b.js.map",
+    "main.b27599bd.css.map": "/reflection/static/css/main.b27599bd.css.map",
+    "main.4a9aa7ad.js.map": "/reflection/static/js/main.4a9aa7ad.js.map",
     "787.892d4448.chunk.js.map": "/reflection/static/js/787.892d4448.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3ed2ec5.css",
-    "static/js/main.2870173b.js"
+    "static/css/main.b27599bd.css",
+    "static/js/main.4a9aa7ad.js"
   ]
 }
