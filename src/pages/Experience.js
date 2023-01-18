@@ -50,7 +50,7 @@ function Experience(props){
 
     return <Grid container className='App-container' id="experience">
                 <Grid item container xs={12} md={6} lg={6} className="bg-white" p={5}>
-                    <Navbar scrollTo={props.scrollTo}/>
+                    <Navbar scrollTo={props.scrollTo} id={"experiencelink"}/>
                 </Grid>
                 <Grid item xs={12} md={6} lg={6} className="main-header center-flex" p={5}>
                         EXPERIENCE

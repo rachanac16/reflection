@@ -124,6 +124,10 @@
   color:white;
 }
 
+.color-primary{
+  color:var(--primary);
+}
+
 .letter-spacing{
   letter-spacing: 0.05cm;
 }

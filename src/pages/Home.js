@@ -31,7 +31,7 @@ function Home(props){
                 RACHANA CHAUDHARI
               </Grid>
               <Grid item container xs={1}>
-                <Navbar scrollTo={props.scrollTo}/>
+                <Navbar scrollTo={props.scrollTo} id="homelink"/>
               </Grid>
               <Grid item xs={5}></Grid>
             </Grid>

@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar';
 function About(props){
     return <Grid container className='App-container' id="about">
         <Grid item container direction="column" xs={12} md={6} lg={6} className="minimal-block-header">
-            <Grid item container xs={2}><Navbar scrollTo={props.scrollTo}/></Grid>
+            <Grid item container xs={2}><Navbar scrollTo={props.scrollTo} id="aboutlink"/></Grid>
             <Grid item  xs={1} className="main-header display-flex-end">
                 ABOUT ME
             </Grid>
