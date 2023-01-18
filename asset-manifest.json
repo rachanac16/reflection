@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/reflection/static/css/main.bf507934.css",
-    "main.js": "/reflection/static/js/main.ba934e34.js",
+    "main.css": "/reflection/static/css/main.eb257346.css",
+    "main.js": "/reflection/static/js/main.1438c29b.js",
     "static/js/787.892d4448.chunk.js": "/reflection/static/js/787.892d4448.chunk.js",
     "static/media/cornell.jpg": "/reflection/static/media/cornell.45e7824f0f4edd2d54bb.jpg",
     "static/media/coverpage2.jpeg": "/reflection/static/media/coverpage2.1c97cbe3a4f6ef018ebe.jpeg",
@@ -10,12 +10,12 @@
     "static/media/divider.png": "/reflection/static/media/divider.57e5eb7ffeafeb3fe5dd.png",
     "static/media/about.jpg": "/reflection/static/media/about.ebed111cc16ceda367d6.jpg",
     "index.html": "/reflection/index.html",
-    "main.bf507934.css.map": "/reflection/static/css/main.bf507934.css.map",
-    "main.ba934e34.js.map": "/reflection/static/js/main.ba934e34.js.map",
+    "main.eb257346.css.map": "/reflection/static/css/main.eb257346.css.map",
+    "main.1438c29b.js.map": "/reflection/static/js/main.1438c29b.js.map",
     "787.892d4448.chunk.js.map": "/reflection/static/js/787.892d4448.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf507934.css",
-    "static/js/main.ba934e34.js"
+    "static/css/main.eb257346.css",
+    "static/js/main.1438c29b.js"
   ]
 }
