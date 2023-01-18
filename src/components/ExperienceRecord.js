@@ -27,7 +27,7 @@ function ExperienceRecord(props){
                         
                     </Grid>
                 </Grid> */}
-                <Grid item container direction="column" xs={10} md={10} lg={10} className="padding2" spacing={2}>
+                <Grid item container direction="column" xs={10} md={10} lg={10} p={3} spacing={2}>
                     <Grid item className='sub-header-2'>
                         {record.companyName} | {record.location}
                     </Grid>
@@ -49,7 +49,7 @@ function ExperienceRecord(props){
                         </div> 
                         <ul>
                             {record.description.map((course)=>(
-                                <li>{course}</li>
+                                <li style={{paddingBottom:10, width:"50%"}}>{course}</li>
                             ))}
                         </ul>
                     </Grid>

@@ -6,9 +6,9 @@ const ExperienceData = [
     {
         id:0, 
         shortName:'jpmc', 
-        companyName:'JPMorgan Chase & Co.', 
-        position:'Software Analyst', 
-        location:'Mumbai, India',
+        companyName:'JPMORGAN CHASE & CO.', 
+        position:'SOFTWARE ANALYST', 
+        location:'MUMBAI, INDIA',
         date:'JULY 2021 - JULY 2022', 
         description:['Responsible for providing automation using Python to existing monitoring applications in a DevOps and SRE role and taking responsibility for ad hoc requests for enhancements in internal applications',
                     'Created an incident reporting system in Java, and AngularJS used across all business markets by more than 200+ people'], 
@@ -18,9 +18,9 @@ const ExperienceData = [
     {
         id:1, 
         shortName:'deesha', 
-        companyName:'Deesha Trade Endeavors Pvt. Ltd.', 
-        position:'Backend Developer Intern', 
-        location:'Mumbai, India',
+        companyName:'DEESHA TRADE ENDEAVORS PVT. LTD.', 
+        position:'BACKEND DEVELOPER INTERN', 
+        location:'MUMBAI, INDIA',
         date:'MARCH 2021 - APRIL 2022', 
         description:['Developed the application, tested, and maintained 10+ endpoints using Spring boot for an auction system of tea products'
         ,'Improved the database to store the client information and the auction details for fast and real-time querying'], 
@@ -29,9 +29,9 @@ const ExperienceData = [
     },{
         id:2, 
         shortName:'jpmc', 
-        companyName:'JPMorgan Chase & Co.', 
-        position:'Software Analyst Intern', 
-        location:'Mumbai, India',
+        companyName:'JPMORGAN CHASE & CO.', 
+        position:'SOFTWARE ANALYST INTERN', 
+        location:'MUMBAI, INDIA',
         date:'JUNE 2020 - JULY 2021', 
         description:['Developed a Web Application using Spring-boot, ReactJS, and MySQL for handling daily activities of an NGO and providing a seamless volunteer experience with dynamic schedules that used a heuristic approach for organizing events'], 
         icon:JPMorgan, 
@@ -40,9 +40,9 @@ const ExperienceData = [
     {
         id:3, 
         shortName:'otb', 
-        companyName:'OTB Innovtech LLP.', 
-        position:'Android Application Developer Intern', 
-        location:'Mumbai, India',
+        companyName:'OTB INNOVTECH LLP.', 
+        position:'ANDROID APPLICATION DEVELOPER INTERN', 
+        location:'MUMBAI, INDIA',
         date:'MAY 2019 - JULY 2019', 
         description:['Designed an Android Application to track 100+ salespersons in real-time on the field with integrated features like booking orders and updating inventory which led to saving 2 hours per salesperson in traveling and eliminated 10 hours of delay caused by decisions made manually'
         ,'Used Android Studio in Java; XML, PHP for REST API; AsyncTask for background threads; Firebase for real-time notifications'], 

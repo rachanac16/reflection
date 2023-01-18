@@ -13,7 +13,7 @@ function Projects(){
         window.open(url, '_blank', 'noopener,noreferrer');
     };
 
-    return <div id="projects" className='project_container '>
+    return <div id="projects" className='App-container '>
         <Grid container spacing={5}>
             <Grid item xs={12}>
                 <Typography variant='h3'>
