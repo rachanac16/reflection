@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid } from '@mui/material';
 
 function Navbar(props){
-    return <Grid item container xs={12} className='navbar center-flex' spacing={{xs:1, md:2, lg:3}} style={{paddingTop:"10px"}}>
+    return <Grid item container xs={12} className='navbar center-flex' spacing={{xs:1, md:3, lg:3}} style={{paddingTop:"10px"}}>
     <Grid item>
     <a onClick={()=>props.scrollTo('#home')}>HOME</a>
     </Grid>

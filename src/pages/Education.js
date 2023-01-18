@@ -19,7 +19,7 @@ function Education(props){
         setLearnMore(false);
     }
 
-    return <Grid container className='Education-container' id="education">
+    return <Grid container className='App-container' id="education">
                 <Grid item container xs={12} md={6} lg={6} className="bg-white" p={5}>
                     <Navbar scrollTo={props.scrollTo}/>
                 </Grid>
@@ -27,9 +27,9 @@ function Education(props){
                     EDUCATION
                 </Grid>
                 {
-                    EducationData.map((educationRecord, universityIndex)=>(<EducationRecord record={educationRecord}/>))
+                    EducationData.map((educationRecord)=>(<EducationRecord record={educationRecord} key={educationRecord.universityIndex}/>))
                 }
-                <Grid item container xs={12} md={12} lg={12} className="center-flex" p={8}>
+                <Grid item container xs={12} md={12} lg={12} className="center-flex" p={2}>
                     <IconButton onClick={()=>props.scrollTo("#experience")}><KeyboardDoubleArrowDownIcon color="buttonColor" sx={{ fontSize: "30px", "&:hover": { color: "#ffffff" }}}/></IconButton>
                 </Grid>
             </Grid>;
