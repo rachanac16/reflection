@@ -34,8 +34,8 @@ function Experience(props){
         }else{
             setShowArrowLeft(false);
         }
-        const progress = document.querySelector("#progress");
         setCurrentRecord(currentRecord-1);
+        const progress = document.querySelector("#progress");
         progress.style.width = (25*(currentRecord)) + '%';
     }
 
@@ -43,6 +43,8 @@ function Experience(props){
         setCurrentRecord(0);
         setShowArrowLeft(false);
         setShowArrowRight(true);
+        const progress = document.querySelector("#progress");
+        progress.style.width = 25 + '%';
     }
     
 
@@ -90,8 +92,8 @@ function Experience(props){
                 </Grid>
                 <ExperienceRecord id={currentRecord}/>
 
-                <Grid item container xs={12} md={12} lg={12} className="center-flex bg-white">
-                    <IconButton onClick={()=>props.scrollTo("#projects")}><KeyboardDoubleArrowDownIcon color="buttonColor" sx={{ fontSize: "30px", "&:hover": { color: "#c0b3f3" }}}/></IconButton>
+                <Grid item container xs={12} md={12} lg={12} className="center-flex bg-primary">
+                    <IconButton onClick={()=>props.scrollTo("#projects")}><KeyboardDoubleArrowDownIcon color="secondary" sx={{ fontSize: "30px", "&:hover": { color: "#000000" }}}/></IconButton>
                 </Grid>
             </Grid>;
 }
