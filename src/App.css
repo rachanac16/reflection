@@ -9,7 +9,9 @@
 .App-container{
   width: inherit;
   background-color: var(--primary);
-  min-height: 100%;
+  height: 100%;
+  overflow: scroll;
+
 }
 
 .content{
@@ -182,6 +184,10 @@
   display: inline-block;
   /* width: 400px; */
   /* transition: all 1s ease; */
+}
+
+.education-container{
+  height:100%;
 }
 
 /* .carousel-item:hover { */

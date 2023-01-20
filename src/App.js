@@ -34,7 +34,7 @@ const scrollTo = (ref) => {
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <div className="App">
+    <div className="App">
       <Home scrollTo={scrollTo}/>
       <About scrollTo={scrollTo}/>
       <Education scrollTo={scrollTo}/>

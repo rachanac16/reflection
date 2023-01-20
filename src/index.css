@@ -8,6 +8,10 @@ body,
   font-family: 'Cormorant Garamond', serif;
 }
 
+body{
+  overflow-y: hidden;
+}
+
 :root{
   --primary: #c0b3f3;
 }
