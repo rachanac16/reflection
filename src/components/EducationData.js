@@ -11,7 +11,7 @@ const EducationData = [
         cgpa:'3.82/4',
         relevantCoursework:['Introduction to Algorithm Analysis', 'Foundations of Artificial Intelligence', 'Business Intelligence Systems', 'Management Consulting Essentials'], 
         icon:cornell,
-        desc:'Working in the industry for a year, I understood my strengths and weaknesses. I decided that going back to academia is the best way to polish my skills. This M.Engg degree is an industry-focused professional degree that helps me grow in specialized areas that I wanted to focus on.',
+        desc:'Working in the industry for a year, I understood my strengths and weaknesses. I decided that going back to academia is the best way to polish my skills. This M.Eng degree is an industry-focused professional degree that helps me grow in specialized areas that I wanted to focus on.',
     },
     {
         universityIndex:2, 
