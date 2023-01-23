@@ -45,7 +45,7 @@ function ExperienceRecord(props){
                     </Grid>
                     <Grid item className="content">
                         <div className='content-italic'>
-                        RELEVENT COURSEWORK
+                        KEY TAKEAWAYS
                         </div> 
                         <ul>
                             {record.description.map((course)=>(

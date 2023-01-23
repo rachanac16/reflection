@@ -22,7 +22,7 @@ const theme = createTheme({
     }
   },
   typography: {
-    fontFamily:'Cormorant Garamond, serif'
+    fontFamily:['Cormorant Garamond, serif', 'Roboto, sans-serif']
   },
 });
 

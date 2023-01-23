@@ -1,4 +1,4 @@
-import { Avatar, Grid, IconButton, Box, Typography } from '@mui/material';
+import { Avatar, Grid, IconButton, Box, Typography, Button } from '@mui/material';
 import React, { useState } from 'react';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import Navbar from '../components/Navbar';
@@ -60,26 +60,27 @@ function Experience(props){
                 </Grid>
                 <Grid item container xs={12} md={12} lg={12} className="bg-white">                       
                     <Grid item container xs={12} md={12} lg={12} className='content center-flex letter-spacing' p={2}>
-                        <Grid item className="divider height100" xs={2} md={2} lg={2}></Grid>
-                        <Grid item container xs={10} md={5} lg={5} className='content-big center-flex' spacing={0}>
+                        <Grid item className="divider height100" xs={0} md={2} lg={2}></Grid>
+                        <Grid item container xs={12} md={5} lg={5} className='content-big center-flex' spacing={1}>
                             {showArrowLeft &&
-                                <Grid item xs={1} md={1} lg={1} className='content-big center-flex'>
-                                        <IconButton onClick={()=>decreaseCurrentRecord()}>
+                                <Grid item xs={2} md={2} lg={2} className='content-big center-flex'>
+                                        {/* <IconButton onClick={()=>decreaseCurrentRecord()}>
                                             <KeyboardDoubleArrowLeftIcon color="buttonColor" sx={{ fontSize: "40px", "&:hover": { color: "#c0b3f3" }}}/>
-                                        </IconButton>
-                                            
+                                        </IconButton> */}
+                                         <Button onClick={()=>decreaseCurrentRecord()} variant='outlined' color="secondary" sx={{ "&:hover": { color: "#c0b3f3", backgroundColor:"#ffffff" }, backgroundColor:"#c0b3f3"}} className="button">PREV</Button>   
                                 </Grid>
                             }
-                            <Grid item xs={10} md={10} lg={10} className='center-flex'>{ExperienceData[currentRecord].date}</Grid>
-                            <Grid item xs={1} md={1} lg={1} className='center-flex'>
+                            <Grid item xs={8} md={8} lg={showArrowLeft ? 8: 10} className='center-flex'>{ExperienceData[currentRecord].date}</Grid>
+                            <Grid item xs={2} md={2} lg={2} className='center-flex'>
                                 {showArrowRight?
-                                <IconButton onClick={()=>increaseCurrentRecord()}>
-                                        <KeyboardDoubleArrowRightIcon color="buttonColor" sx={{ fontSize: "40px", "&:hover": { color: "#c0b3f3" }}}/>
-                                </IconButton>
+                                // <IconButton onClick={()=>increaseCurrentRecord()}>
+                                //         <KeyboardDoubleArrowRightIcon color="buttonColor" sx={{ fontSize: "40px", "&:hover": { color: "#c0b3f3" }}}/>
+                                // </IconButton>
+                                <Button onClick={()=>increaseCurrentRecord()} variant='outlined' color="secondary" sx={{ "&:hover": { color: "#c0b3f3", backgroundColor:"#ffffff" }, backgroundColor:"#c0b3f3"}} className="button">NEXT</Button>   
                                         :
                                 <IconButton onClick={()=>resetCurrentRecord()}>
-                                        <RestartAltIcon color="buttonColor" sx={{ fontSize: "40px", "&:hover": { color: "#c0b3f3" }}}/>
-                                    </IconButton>
+                                    <RestartAltIcon color="buttonColor" sx={{ fontSize: "40px", "&:hover": { color: "#c0b3f3" }}}/>
+                                </IconButton>
                                         
                                     }
                             </Grid>
