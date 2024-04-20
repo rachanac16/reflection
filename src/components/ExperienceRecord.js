@@ -5,11 +5,11 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 function ExperienceRecord(props){
     
-    const [record, setRecord] = useState(ExperienceData[props.id]);
+    const [record, setRecord] = useState(props.record);
 
     useEffect(()=>{
-        setRecord(ExperienceData[props.id]);
-    },[props.id]);
+        setRecord(props.record);
+    },[props.record]);
 
     return <Grid item container xs={12} md={12} lg={12} className="bg-white" p={2}>
                 <Grid item xs={2} md={2} lg={2} className="bg-primary dispaly-flex-start">

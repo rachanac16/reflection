@@ -1,5 +1,5 @@
 import { Avatar, Grid, IconButton, Box, Typography, Button } from '@mui/material';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 import Navbar from '../components/Navbar';
 import ExperienceData from '../components/ExperienceData';
@@ -13,21 +13,27 @@ function Experience(props){
     const [currentRecord, setCurrentRecord] = useState(0);
     const [showArrowLeft, setShowArrowLeft] = useState(false);
     const [showArrowRight, setShowArrowRight] = useState(true);
+    const [experienceData, setExperienceData] = useState(ExperienceData);
+    const progressFactor = 100/ExperienceData.length
+
+    useEffect(()=>{
+        setExperienceData(ExperienceData.reverse());
+    }, []);
 
     const increaseCurrentRecord=()=>{
-       if(currentRecord<ExperienceData.length-2){
+       if(currentRecord<experienceData.length-2){
             setShowArrowRight(true);
             setShowArrowLeft(true);
         }else{
             setShowArrowRight(false);
         }
         const progress = document.querySelector("#progress");
-        progress.style.width = (25*(currentRecord+2)) + '%';
+        progress.style.width = (progressFactor*(currentRecord+2)) + '%';
         setCurrentRecord(currentRecord+1);
     }
     
     const decreaseCurrentRecord= ()=>{
-        if(currentRecord===ExperienceData.length-1){
+        if(currentRecord===experienceData.length-1){
             setShowArrowRight(true);
         }else if(currentRecord>1){
             setShowArrowLeft(true);
@@ -36,7 +42,7 @@ function Experience(props){
         }
         setCurrentRecord(currentRecord-1);
         const progress = document.querySelector("#progress");
-        progress.style.width = (25*(currentRecord)) + '%';
+        progress.style.width = (progressFactor*(currentRecord)) + '%';
     }
 
     const resetCurrentRecord=()=>{
@@ -44,7 +50,7 @@ function Experience(props){
         setShowArrowLeft(false);
         setShowArrowRight(true);
         const progress = document.querySelector("#progress");
-        progress.style.width = 25 + '%';
+        progress.style.width = progressFactor + '%';
     }
     
 
@@ -70,7 +76,7 @@ function Experience(props){
                                          <Button onClick={()=>decreaseCurrentRecord()} variant='outlined' color="secondary" sx={{ "&:hover": { color: "#c0b3f3", backgroundColor:"#ffffff" }, backgroundColor:"#c0b3f3"}} className="button">PREV</Button>   
                                 </Grid>
                             }
-                            <Grid item xs={8} md={8} lg={showArrowLeft ? 8: 10} className='center-flex'>{ExperienceData[currentRecord].date}</Grid>
+                            <Grid item xs={8} md={8} lg={showArrowLeft ? 8: 10} className='center-flex'>{experienceData[currentRecord].date}</Grid>
                             <Grid item xs={2} md={2} lg={2} className='center-flex'>
                                 {showArrowRight?
                                 // <IconButton onClick={()=>increaseCurrentRecord()}>
@@ -88,7 +94,7 @@ function Experience(props){
                         <Grid item className="divider height100" xs={0} md={5} lg={5}></Grid>
                     </Grid>
                 </Grid>
-                <ExperienceRecord id={currentRecord}/>
+                <ExperienceRecord record={experienceData[currentRecord]}/>
 
                 <Grid item container xs={12} md={12} lg={12} className="center-flex bg-primary">
                     <IconButton onClick={()=>props.scrollTo("#projects")}><KeyboardDoubleArrowDownIcon color="secondary" sx={{ fontSize: "30px", "&:hover": { color: "#000000" }}}/></IconButton>
