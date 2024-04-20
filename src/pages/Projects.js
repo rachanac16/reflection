@@ -1,9 +1,8 @@
-import { Card, CardContent, CardHeader, CardMedia, Grid, Typography, IconButton} from '@mui/material';
+import { Card, CardContent, CardMedia, Grid, IconButton} from '@mui/material';
 import React from 'react';
 import onlineprintshop from './../assets/icons/onlineprintshop.jpg';
 import skinscanapi from './../assets/icons/skinscanapi.jpg';
 import MIB from './../assets/icons/MIB.jpg';
-import Typewriter from 'typewriter-effect';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import Navbar from '../components/Navbar';
