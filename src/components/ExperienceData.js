@@ -77,4 +77,4 @@ const ExperienceData = [
   },
 ];
 
-export default ExperienceData;
+export default ExperienceData.reverse();

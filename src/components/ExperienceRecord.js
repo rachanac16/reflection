@@ -2,16 +2,7 @@ import React, { useEffect, useState } from "react";
 import {
   Avatar,
   Grid,
-  IconButton,
-  Card,
-  CardMedia,
-  CardActions,
-  CardContent,
-  Typography,
-  Button,
 } from "@mui/material";
-import ExperienceData from "../components/ExperienceData";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 
 function ExperienceRecord(props) {
   const [record, setRecord] = useState(props.record);
@@ -30,11 +21,6 @@ function ExperienceRecord(props) {
           variant="square"
         />
       </Grid>
-      {/* <Grid item container direction="column" xs={2} md={2} lg={2} className="bg-white">
-                    <Grid item xs={2} md={4} lg={4}>
-                        
-                    </Grid>
-                </Grid> */}
       <Grid
         item
         container

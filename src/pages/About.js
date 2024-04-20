@@ -1,4 +1,4 @@
-import { Box, Typography, Grid, IconButton } from "@mui/material";
+import { Grid, IconButton } from "@mui/material";
 import React from "react";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 import Navbar from "../components/Navbar";

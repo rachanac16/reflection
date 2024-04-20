@@ -1,18 +1,13 @@
 import {
-  Avatar,
   Grid,
   IconButton,
-  Box,
-  Typography,
   Button,
 } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 import Navbar from "../components/Navbar";
 import ExperienceData from "../components/ExperienceData";
 import ExperienceRecord from "../components/ExperienceRecord";
-import KeyboardDoubleArrowLeftIcon from "@mui/icons-material/KeyboardDoubleArrowLeft";
-import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 import RestartAltIcon from "@mui/icons-material/RestartAlt";
 
 function Experience(props) {
@@ -21,10 +16,6 @@ function Experience(props) {
   const [showArrowRight, setShowArrowRight] = useState(true);
   const [experienceData, setExperienceData] = useState(ExperienceData);
   const progressFactor = 100 / ExperienceData.length;
-
-  useEffect(() => {
-    setExperienceData(ExperienceData.reverse());
-  }, []);
 
   const increaseCurrentRecord = () => {
     if (currentRecord < experienceData.length - 2) {
@@ -105,9 +96,6 @@ function Experience(props) {
                 lg={2}
                 className="content-big center-flex"
               >
-                {/* <IconButton onClick={()=>decreaseCurrentRecord()}>
-                                            <KeyboardDoubleArrowLeftIcon color="buttonColor" sx={{ fontSize: "40px", "&:hover": { color: "#c0b3f3" }}}/>
-                                        </IconButton> */}
                 <Button
                   onClick={() => decreaseCurrentRecord()}
                   variant="outlined"
@@ -133,9 +121,6 @@ function Experience(props) {
             </Grid>
             <Grid item xs={2} md={2} lg={2} className="center-flex">
               {showArrowRight ? (
-                // <IconButton onClick={()=>increaseCurrentRecord()}>
-                //         <KeyboardDoubleArrowRightIcon color="buttonColor" sx={{ fontSize: "40px", "&:hover": { color: "#c0b3f3" }}}/>
-                // </IconButton>
                 <Button
                   onClick={() => increaseCurrentRecord()}
                   variant="outlined"
