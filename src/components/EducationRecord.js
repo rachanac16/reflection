@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Grid, IconButton, Avatar } from "@mui/material";
+import { Grid, Avatar } from "@mui/material";
 
 function EducationRecord(props) {
   const [record, setRecord] = useState(props.record);
