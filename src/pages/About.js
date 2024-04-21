@@ -2,6 +2,8 @@ import { Grid, IconButton } from "@mui/material";
 import React from "react";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 import Navbar from "../components/Navbar";
+import woman from "../assets/woman-computer.png";
+
 
 function About(props) {
   return (
@@ -11,15 +13,12 @@ function About(props) {
         container
         direction="column"
         xs={12}
-        md={6}
-        lg={6}
-        className="minimal-block-header"
+        md={9}
+        lg={9}
+        className="minimal-block-header bg-secondary"
       >
         <Grid item container xs={2}>
           <Navbar scrollTo={props.scrollTo} id="aboutlink" />
-        </Grid>
-        <Grid item xs={1} className="main-header display-flex-end">
-          ABOUT ME
         </Grid>
         <Grid
           item
@@ -28,10 +27,14 @@ function About(props) {
           xs={8}
           md={8}
           lg={8}
-          className="sub-header display-flex-start"
-          p={2}
+          className="body display-flex-start"
+          sx={{paddingLeft: '12rem', paddingRight: '12rem'}}
+          // p={}
         >
-          <Grid item xs={3}>
+          <Grid item xs={3} className="header color-primary display-flex-end">
+          About Me
+          </Grid>
+          <Grid item xs={3} className="content display-flex-center">
             I am a dedicated Software Engineer determined to achieve success in
             creating, debugging, testing and deploying systems powered with AI
             to enhance life experiences in different aspects ranging from
@@ -39,19 +42,19 @@ function About(props) {
             fast-paced innovative environment with excellent interpersonal as
             well as communication skills.
           </Grid>
-          <Grid item xs={2}>
+          <Grid item xs={3} className="content display-flex-start">
             I am always looking for inspiration in the fast paced lives led by
             technology and how I can assist without handicapping people from
             achieving goals.
           </Grid>
-          <Grid item xs={1} className="center-flex width100">
+          {/* <Grid item xs={1} className="center-flex width100">
             <IconButton onClick={() => props.scrollTo("#education")}>
               <KeyboardDoubleArrowDownIcon
                 color="buttonColor"
                 sx={{ fontSize: "30px", "&:hover": { color: "#c0b3f3" } }}
               />
             </IconButton>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Grid>
       <Grid
@@ -59,29 +62,11 @@ function About(props) {
         direction="column"
         container
         xs={12}
-        md={6}
-        lg={6}
+        md={3}
+        lg={3}
         className="bg-primary"
       >
-        <Grid item xs={3} md={3} lg={3} className="bg-white"></Grid>
-        <Grid item container xs={10} md={6} lg={6}>
-          <Grid item container direction="column" xs={2} md={2} lg={2}>
-            <Grid item xs={8} md={8} lg={8} className="bg-white"></Grid>
-            <Grid item xs={4} md={4} lg={4}></Grid>
-          </Grid>
-          <Grid
-            item
-            xs={8}
-            md={8}
-            lg={8}
-            className="image-container-about"
-          ></Grid>
-          <Grid item container direction="column" xs={2} md={2} lg={2}>
-            <Grid item xs={8} md={8} lg={8} className="bg-white"></Grid>
-            <Grid item xs={4} md={4} lg={4}></Grid>
-          </Grid>
-        </Grid>
-        <Grid item md={6} lg={3}></Grid>
+      <img src={woman} className="image-container-about"/>
       </Grid>
     </Grid>
   );

@@ -24,7 +24,7 @@ const theme = createTheme({
 
 const scrollTo = (ref) => {
   const anchor = document.querySelector(ref);
-  // anchor.scrollIntoView({ behavior: "smooth", block: "start" });
+  anchor.scrollIntoView({ behavior: "smooth", block: "start" });
 };
 
 function App() {

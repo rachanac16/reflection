@@ -35,7 +35,7 @@ function Home(props) {
         xs={12}
         md={5}
         lg={6}
-        className="minimal-block-header bg-pimrary"
+        className="minimal-block-header bg-primary"
       >
         <Grid
           item
