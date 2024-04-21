@@ -7,7 +7,7 @@ function Navbar(props) {
       item
       container
       xs={12}
-      className="navbar center-flex"
+      className={"center-flex " + (props.id!== "homelink" && props.id!=="projectslink" ? "navbar" : "navbar-contrast")}
       spacing={{ xs: 1, md: 3, lg: 3 }}
       style={{ paddingTop: "10px" }}
     >
@@ -15,7 +15,7 @@ function Navbar(props) {
         <a
           onClick={() => props.scrollTo("#home")}
           id="homelink"
-          className={props.id === "homelink" && "color-primary"}
+          className={props.id === "homelink" && "color-black"}
         >
           HOME
         </a>
@@ -51,7 +51,7 @@ function Navbar(props) {
         <a
           onClick={() => props.scrollTo("#projects")}
           id="projectslink"
-          className={props.id === "projectslink" && "color-primary"}
+          className={props.id === "projectslink" && "color-black"}
         >
           PROJECTS
         </a>

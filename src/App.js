@@ -11,24 +11,20 @@ import Projects from "./pages/Projects";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#c0b3f3",
+      main: "#886176",
     },
     secondary: {
-      main: "#ffffff",
-      secondary: "#000000",
-    },
-    buttonColor: {
-      main: "#000000",
-    },
+      main: "#ffedd2"
+    }
   },
   typography: {
-    fontFamily: ["Cormorant Garamond, serif", "Roboto, sans-serif"],
+    fontFamily: ["Old Standard TT, serif", "Roboto, sans-serif"],
   },
 });
 
 const scrollTo = (ref) => {
   const anchor = document.querySelector(ref);
-  anchor.scrollIntoView({ behavior: "smooth", block: "start" });
+  // anchor.scrollIntoView({ behavior: "smooth", block: "start" });
 };
 
 function App() {
