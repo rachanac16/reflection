@@ -20,7 +20,7 @@ function Education(props) {
 
   return (
     <Grid container className="App-container" id="education">
-      <Grid item container xs={12} md={6} lg={6} className="bg-white" p={5}>
+      <Grid item container xs={12} md={6} lg={6} className="bg-secondary" p={5}>
         <Navbar scrollTo={props.scrollTo} id="educationlink" />
       </Grid>
       <Grid
@@ -28,10 +28,10 @@ function Education(props) {
         xs={12}
         md={6}
         lg={6}
-        className="main-header center-flex"
+        className="header color-primary center-flex bg-secondary"
         p={5}
       >
-        EDUCATION
+        Education
       </Grid>
       {EducationData.map((educationRecord) => (
         <EducationRecord
@@ -39,7 +39,7 @@ function Education(props) {
           key={educationRecord.universityIndex}
         />
       ))}
-      <Grid
+      {/* <Grid
         item
         container
         xs={12}
@@ -54,7 +54,7 @@ function Education(props) {
             sx={{ fontSize: "30px", "&:hover": { color: "#ffffff" } }}
           />
         </IconButton>
-      </Grid>
+      </Grid> */}
     </Grid>
   );
 }

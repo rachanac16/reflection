@@ -14,8 +14,8 @@ const theme = createTheme({
       main: "#886176",
     },
     secondary: {
-      main: "#ffedd2"
-    }
+      main: "#ffedd2",
+    },
   },
   typography: {
     fontFamily: ["Old Standard TT, serif", "Roboto, sans-serif"],

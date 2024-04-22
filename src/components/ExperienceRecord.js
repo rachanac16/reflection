@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from "react";
-import {
-  Avatar,
-  Grid,
-} from "@mui/material";
+import { Avatar, Grid } from "@mui/material";
 
 function ExperienceRecord(props) {
   const [record, setRecord] = useState(props.record);

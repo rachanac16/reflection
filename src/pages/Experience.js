@@ -1,8 +1,4 @@
-import {
-  Grid,
-  IconButton,
-  Button,
-} from "@mui/material";
+import { Grid, IconButton, Button } from "@mui/material";
 import React, { useState } from "react";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 import Navbar from "../components/Navbar";
