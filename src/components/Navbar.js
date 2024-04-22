@@ -7,7 +7,12 @@ function Navbar(props) {
       item
       container
       xs={12}
-      className={"center-flex " + (props.id!== "homelink" && props.id!=="projectslink" ? "navbar" : "navbar-contrast")}
+      className={
+        "center-flex " +
+        (props.id !== "homelink" && props.id !== "projectslink"
+          ? "navbar"
+          : "navbar-contrast")
+      }
       spacing={{ xs: 1, md: 3, lg: 3 }}
       style={{ paddingTop: "10px" }}
     >

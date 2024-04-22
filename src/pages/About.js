@@ -4,7 +4,6 @@ import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrow
 import Navbar from "../components/Navbar";
 import woman from "../assets/woman-computer.png";
 
-
 function About(props) {
   return (
     <Grid container className="App-container" id="about">
@@ -28,11 +27,11 @@ function About(props) {
           md={8}
           lg={8}
           className="body display-flex-start"
-          sx={{paddingLeft: '12rem', paddingRight: '12rem'}}
+          sx={{ paddingLeft: "12rem", paddingRight: "12rem" }}
           // p={}
         >
           <Grid item xs={3} className="header color-primary display-flex-end">
-          About Me
+            About Me
           </Grid>
           <Grid item xs={3} className="content display-flex-center">
             I am a dedicated Software Engineer determined to achieve success in
@@ -66,7 +65,7 @@ function About(props) {
         lg={3}
         className="bg-primary"
       >
-      <img src={woman} className="image-container-about"/>
+        <img src={woman} className="image-container-about" />
       </Grid>
     </Grid>
   );

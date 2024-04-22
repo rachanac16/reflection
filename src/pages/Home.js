@@ -22,10 +22,9 @@ function Home(props) {
         lg={6}
         className="bg-secondary"
       >
-        <Grid item container xs={0} md={6} lg={6}>
-        </Grid>
+        <Grid item container xs={0} md={6} lg={6}></Grid>
         <Grid item container xs={0} md={6} lg={6} className="bg-primary">
-        <div className="image-container-main"></div>
+          <div className="image-container-main"></div>
         </Grid>
       </Grid>
       <Grid

@@ -19,7 +19,11 @@ function EducationRecord(props) {
           <Avatar
             alt={record.universityName}
             src={record.icon}
-            sx={{ height: "10rem", width: "10rem", border:"0.5rem solid var(--primary)" }}
+            sx={{
+              height: "10rem",
+              width: "10rem",
+              border: "0.5rem solid var(--primary)",
+            }}
             variant="circle"
           />
         </Grid>
@@ -41,14 +45,14 @@ function EducationRecord(props) {
           {record.degree}
         </Grid>
         <Grid item>
-        <hr
-          style={{
+          <hr
+            style={{
               color: "var(--primary)",
               backgroundColor: "var(--primary)",
               height: 2,
               width: "100%",
-          }}
-        />
+            }}
+          />
         </Grid>
         <Grid item className="content-bold body">
           {record.date}

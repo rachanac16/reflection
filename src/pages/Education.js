@@ -29,7 +29,7 @@ function Education(props) {
         md={6}
         lg={6}
         className="header color-primary center-flex bg-secondary"
-        p={7}
+        p={5}
       >
         Education
       </Grid>
