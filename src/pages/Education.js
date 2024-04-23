@@ -19,7 +19,7 @@ function Education(props) {
   };
 
   return (
-    <Grid container className="App-container" id="education">
+    <Grid container className="App-container" id="education" onWheel={()=>{props.scrollTo("#experience", "instant")}}>
       <Grid item container xs={12} md={6} lg={6} className="bg-secondary" p={5}>
         <Navbar scrollTo={props.scrollTo} id="educationlink" />
       </Grid>
