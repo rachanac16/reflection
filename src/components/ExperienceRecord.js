@@ -9,12 +9,21 @@ function ExperienceRecord(props) {
   }, [props.record]);
 
   return (
-    <Grid item container xs={12} md={12} lg={12} className="bg-white" p={2}>
-      <Grid item xs={2} md={2} lg={2} className="bg-primary dispaly-flex-start">
+    <Grid
+      item
+      container
+      xs={12}
+      md={12}
+      lg={12}
+      className="bg-secondary center-flex-stretch"
+      p={2}
+      sx={{ height: "60%" }}
+    >
+      <Grid item xs={2} md={2} lg={2} className="display-flex-center">
         <Avatar
           alt={record.companyName}
           src={record.icon}
-          sx={{ height: "15vw", width: "100%" }}
+          sx={{ height: "15vw", width: "15vw", borderRadius: "2rem" }}
           variant="square"
         />
       </Grid>
@@ -23,29 +32,41 @@ function ExperienceRecord(props) {
         container
         direction="column"
         xs={10}
-        md={10}
-        lg={10}
+        md={6}
+        lg={6}
         p={3}
         spacing={2}
       >
-        <Grid item className="sub-header-2">
-          {record.companyName} | {record.location}
+        <Grid item className="sub-header">
+          {record.companyName}
         </Grid>
-        <Grid item className="content"></Grid>
-        <Grid item className="content">
-          {record.position}
+
+        <Grid item className="body content">
+          {record.position}, {record.location}
         </Grid>
-        <Grid item className="content">
+        <Grid item>
+          <hr
+            style={{
+              color: "var(--primary)",
+              backgroundColor: "var(--primary)",
+              height: 2,
+              width: "100%",
+            }}
+          />
+        </Grid>
+        <Grid item className="body content">
           {record.desc}
         </Grid>
-        <Grid item className="content">
+        <Grid item className="body content">
           {record.skills}
         </Grid>
-        <Grid item className="content">
-          <div className="content-italic">KEY TAKEAWAYS</div>
+        <Grid item className="content body">
+          <div className="">Key Takeaways</div>
           <ul>
-            {record.description.map((course) => (
-              <li style={{ paddingBottom: "5px", width: "70%" }}>{course}</li>
+            {record.description.map((course, i) => (
+              <li style={{ paddingBottom: "5px" }} key={i}>
+                {course}
+              </li>
             ))}
           </ul>
         </Grid>
