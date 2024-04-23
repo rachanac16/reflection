@@ -13,7 +13,14 @@ function Home(props) {
   };
 
   return (
-    <Grid container className="App-container" id="home" onWheel={()=>{props.scrollTo("#about", "instant")}}>
+    <Grid
+      container
+      className="App-container"
+      id="home"
+      onWheel={() => {
+        props.scrollTo("#about", "instant");
+      }}
+    >
       <Grid
         item
         container

@@ -67,7 +67,14 @@ function Experience(props) {
   };
 
   return (
-    <Grid container className="App-container bg-secondary" id="experience" onWheel={()=>{props.scrollTo("#projects", "instant")}}>
+    <Grid
+      container
+      className="App-container bg-secondary"
+      id="experience"
+      onWheel={() => {
+        props.scrollTo("#projects", "instant");
+      }}
+    >
       <Grid item container xs={12} md={6} lg={6} className="bg-white" p={5}>
         <Navbar scrollTo={props.scrollTo} id={"experiencelink"} />
       </Grid>
@@ -180,7 +187,7 @@ function Experience(props) {
       </Grid>
       <ExperienceRecord record={experienceData[currentRecord]} />
 
-{/* 
+      {/* 
       <div className="next-arrow-icon-education">
 
         <IconButton onClick={() => props.scrollTo("#projects")}>
@@ -191,7 +198,6 @@ function Experience(props) {
         </IconButton>
 
       </div> */}
-
     </Grid>
   );
 }

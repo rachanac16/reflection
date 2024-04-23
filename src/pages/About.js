@@ -6,7 +6,14 @@ import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrow
 
 function About(props) {
   return (
-    <Grid container className="App-container" id="about" onWheel={()=>{props.scrollTo("#education", "instant")}}>
+    <Grid
+      container
+      className="App-container"
+      id="about"
+      onWheel={() => {
+        props.scrollTo("#education", "instant");
+      }}
+    >
       <Grid
         item
         container
