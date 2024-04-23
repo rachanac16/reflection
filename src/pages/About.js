@@ -1,8 +1,8 @@
 import { Grid, IconButton } from "@mui/material";
 import React from "react";
-import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 import Navbar from "../components/Navbar";
 import woman from "../assets/woman-computer.png";
+import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 
 function About(props) {
   return (
@@ -46,14 +46,6 @@ function About(props) {
             technology and how I can assist without handicapping people from
             achieving goals.
           </Grid>
-          {/* <Grid item xs={1} className="center-flex width100">
-            <IconButton onClick={() => props.scrollTo("#education")}>
-              <KeyboardDoubleArrowDownIcon
-                color="buttonColor"
-                sx={{ fontSize: "30px", "&:hover": { color: "#c0b3f3" } }}
-              />
-            </IconButton>
-          </Grid> */}
         </Grid>
       </Grid>
       <Grid
@@ -66,6 +58,14 @@ function About(props) {
         className="bg-primary"
       >
         <img src={woman} className="image-container-about" />
+      <div className="next-arrow-icon">
+      <IconButton onClick={() => props.scrollTo("#education")}>
+          <KeyboardDoubleArrowDownIcon
+            color="secondary"
+            sx={{ fontSize: "40px", "&:hover": { color: "#000000" } }}
+          />
+        </IconButton>
+      </div>
       </Grid>
     </Grid>
   );

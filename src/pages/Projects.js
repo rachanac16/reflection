@@ -14,8 +14,8 @@ function Projects(props) {
   };
 
   return (
-    <Grid container className="App-container" id="projects">
-      <Grid item container xs={12} md={6} lg={6} className="bg-white" p={5}>
+    <Grid container className="App-container bg-primary" id="projects">
+      <Grid item container xs={12} md={6} lg={6} className="bg-primary" p={5}>
         <Navbar scrollTo={props.scrollTo} id="projectslink" />
       </Grid>
       <Grid
@@ -23,13 +23,13 @@ function Projects(props) {
         xs={12}
         md={6}
         lg={6}
-        className="main-header center-flex"
+        className="header center-flex bg-primary color-secondary"
         p={5}
       >
-        PROJECTS
+        Projects
       </Grid>
-      <Grid item xs={12} md={4} lg={4} p={2} className="content">
-        <Card sx={{ maxWidth: 500, minHeight: 550 }}>
+      <Grid item xs={12} md={4} lg={4} p={2} className="content body">
+        <Card sx={{ maxWidth: 500, minHeight: 550, backgroundColor: 'var(--secondary)' }} >
           <CardMedia
             component="img"
             height="194"
@@ -44,7 +44,7 @@ function Projects(props) {
             <div className="content-small color-grey padding2">
               JUN 2021 - AUG 2021
             </div>
-            <div className="content padding2">
+            <div className="content-small padding2">
               Developed an API that classifies an image of a skin section into
               different skin diseases and informs if it is normal, built using
               flask framework in python and deployed the CNN model in Azure
@@ -54,28 +54,28 @@ function Projects(props) {
         </Card>
       </Grid>
 
-      <Grid item xs={12} md={4} lg={4} p={2} className="content">
-        <Card sx={{ maxWidth: 500, minHeight: 550 }}>
+      <Grid item xs={12} md={4} lg={4} p={2} className="content body">
+        <Card sx={{ maxWidth: 500, minHeight: 550 , backgroundColor: 'var(--secondary)'}}>
           <CardMedia component="img" height="194" image={MIB} alt="MIB" />
 
           <CardContent>
             <div className="content-big letter-spacing padding2">
               MULTI-OUTPUT INCREMENTAL BACKPROPAGATION (Submitted)
               <IconButton
-                color="buttonColor"
+                color="primary"
                 onClick={() =>
                   openInNewTab(
                     "https://drive.google.com/file/d/1iBr5EFQnRm7ZSppvwi0ZB4nDpTv9HUql/view?usp=share_link",
                   )
                 }
               >
-                <PictureAsPdfIcon sx={{ fontSize: "30px" }} />
+                <PictureAsPdfIcon sx={{ fontSize: "30px", "&:hover": { color: "black" } }} />
               </IconButton>
             </div>
             <div className="content-small color-grey padding2">
               AUG 2020 - FEB 2021
             </div>
-            <div className="content padding2">
+            <div className="content-small padding2">
               Designed and tested deep learning models with the proposed
               architecture model and achieved a 10% reduction in time compared
               to a standard neural network. <br />
@@ -87,8 +87,8 @@ function Projects(props) {
         </Card>
       </Grid>
 
-      <Grid item xs={12} md={4} lg={4} p={2} className="content">
-        <Card sx={{ maxWidth: 500, minHeight: 550 }}>
+      <Grid item xs={12} md={4} lg={4} p={2} className="content body">
+        <Card sx={{ maxWidth: 500, minHeight: 550 , backgroundColor: 'var(--secondary)'}}>
           <CardMedia
             component="img"
             height="194"
@@ -99,19 +99,19 @@ function Projects(props) {
             <div className="content-big letter-spacing padding2">
               ONLINE PRINTING SHOP
               <IconButton
-                color="buttonColor"
+                color="primary"
                 onClick={() =>
                   openInNewTab("https://github.com/rachanac16/OnlinePrintShop")
                 }
               >
-                <GitHubIcon sx={{ fontSize: "30px" }} />
+                <GitHubIcon sx={{ fontSize: "30px", "&:hover": { color: "#000000" } }} />
               </IconButton>
             </div>
             <br />
             <div className="content-small color-grey padding2">
               JAN 2019 - JAN 2020
             </div>
-            <div className="content padding2">
+            <div className="content-small padding2">
               Built an online platform to place orders for printing documents
               that also efficiently calculates the ETA of the documents and
               handles alerts admins about low resources.
@@ -134,7 +134,7 @@ function Projects(props) {
         <IconButton onClick={() => props.scrollTo("#home")}>
           <KeyboardDoubleArrowUpIcon
             color="secondary"
-            sx={{ fontSize: "30px", "&:hover": { color: "#000000" } }}
+            sx={{ fontSize: "40px", "&:hover": { color: "#000000" } }}
           />
         </IconButton>
       </Grid>
