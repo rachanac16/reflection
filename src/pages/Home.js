@@ -5,6 +5,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import SubjectIcon from "@mui/icons-material/Subject";
+import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 
 function Home(props) {
   const openInNewTab = (url) => {
@@ -48,7 +49,7 @@ function Home(props) {
         <Grid item xs={1} md={1} lg={1} pt={1}>
           <Navbar scrollTo={props.scrollTo} id="homelink" />
         </Grid>
-        <Grid item xs={4} md={6} lg={6} className="display-flex-start">
+        <Grid item xs={4} md={1} lg={1} className="display-flex-start">
           <IconButton
             color="secondary"
             onClick={() =>
@@ -85,6 +86,21 @@ function Home(props) {
           >
             <SubjectIcon
               sx={{ fontSize: "30px", "&:hover": { color: "black" } }}
+            />
+          </IconButton>
+        </Grid>
+        <Grid
+          item
+          container
+          xs={4}
+          md={5}
+          lg={5}
+          className="center-flex bg-primary"
+        >
+          <IconButton onClick={() => props.scrollTo("#about")}>
+            <KeyboardDoubleArrowDownIcon
+              color="secondary"
+              sx={{ fontSize: "40px", "&:hover": { color: "#000000" } }}
             />
           </IconButton>
         </Grid>

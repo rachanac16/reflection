@@ -53,7 +53,7 @@
 .content-small{
   text-align: justify;
   text-justify: inter-word;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 300;
   line-height: 1.5rem;
 }
@@ -245,6 +245,22 @@
   right: 0%;
   top: 12rem;
   /* left: 0; */
+}
+
+.next-arrow-icon{
+  position: relative;
+  top: 40%;
+  right: 0;
+  align-self: flex-end;
+  padding-right: 20%;
+}
+
+.next-arrow-icon-education{
+  position: absolute;
+  right: 0;
+  margin-top: 48%;
+  width: min-content;
+  padding-right: 5%;
 }
 
 .progress{

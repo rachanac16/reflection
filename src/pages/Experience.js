@@ -180,21 +180,18 @@ function Experience(props) {
       </Grid>
       <ExperienceRecord record={experienceData[currentRecord]} />
 
-      {/* <Grid
-        item
-        container
-        xs={12}
-        md={12}
-        lg={12}
-        className="center-flex bg-primary"
-      >
+
+      <div className="next-arrow-icon-education">
+
         <IconButton onClick={() => props.scrollTo("#projects")}>
           <KeyboardDoubleArrowDownIcon
-            color="secondary"
-            sx={{ fontSize: "30px", "&:hover": { color: "#000000" } }}
+            color="primary"
+            sx={{ fontSize: "40px", "&:hover": { color: "black" } }}
           />
         </IconButton>
-      </Grid> */}
+
+      </div>
+
     </Grid>
   );
 }
