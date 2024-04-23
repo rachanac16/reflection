@@ -180,7 +180,7 @@ function Experience(props) {
       </Grid>
       <ExperienceRecord record={experienceData[currentRecord]} />
 
-
+{/* 
       <div className="next-arrow-icon-education">
 
         <IconButton onClick={() => props.scrollTo("#projects")}>
@@ -190,7 +190,7 @@ function Experience(props) {
           />
         </IconButton>
 
-      </div>
+      </div> */}
 
     </Grid>
   );

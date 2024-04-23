@@ -255,14 +255,6 @@
   padding-right: 20%;
 }
 
-.next-arrow-icon-education{
-  position: absolute;
-  right: 0;
-  margin-top: 48%;
-  width: min-content;
-  padding-right: 5%;
-}
-
 .progress{
   width: 99%;
   background-color: var(--primary);
