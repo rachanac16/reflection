@@ -1,6 +1,8 @@
 import { Grid, IconButton, Button } from "@mui/material";
 import React, { useState } from "react";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import Navbar from "../components/Navbar";
 import ExperienceData from "../components/ExperienceData";
 import ExperienceRecord from "../components/ExperienceRecord";
@@ -47,7 +49,7 @@ function Experience(props) {
   };
 
   return (
-    <Grid container className="App-container" id="experience">
+    <Grid container className="App-container bg-secondary" id="experience">
       <Grid item container xs={12} md={6} lg={6} className="bg-white" p={5}>
         <Navbar scrollTo={props.scrollTo} id={"experiencelink"} />
       </Grid>
@@ -56,10 +58,10 @@ function Experience(props) {
         xs={12}
         md={6}
         lg={6}
-        className="main-header center-flex"
+        className="header color-primary center-flex bg-secondary"
         p={5}
       >
-        EXPERIENCE
+        Experience
       </Grid>
       <Grid item xs={12} md={12} lg={12} className="bg-white" spacing={0}>
         <div className="progress" id="progress"></div>
@@ -74,7 +76,6 @@ function Experience(props) {
           className="content center-flex letter-spacing"
           p={2}
         >
-          <Grid item className="divider height100" xs={0} md={2} lg={2}></Grid>
           <Grid
             item
             container
@@ -92,18 +93,12 @@ function Experience(props) {
                 lg={2}
                 className="content-big center-flex"
               >
-                <Button
-                  onClick={() => decreaseCurrentRecord()}
-                  variant="outlined"
-                  color="secondary"
-                  sx={{
-                    "&:hover": { color: "#c0b3f3", backgroundColor: "#ffffff" },
-                    backgroundColor: "#c0b3f3",
-                  }}
-                  className="button"
-                >
-                  PREV
-                </Button>
+                <IconButton onClick={() => increaseCurrentRecord()} sx={{ backgroundColor: "var(--primary)" }}>
+                  <ChevronLeftIcon
+                    color="secondary"
+                    className="icon-button"
+                  />
+                </IconButton>
               </Grid>
             )}
             <Grid
@@ -111,40 +106,33 @@ function Experience(props) {
               xs={8}
               md={8}
               lg={showArrowLeft ? 8 : 10}
-              className="center-flex"
+              className="center-flex color-primary"
             >
               {experienceData[currentRecord].date}
             </Grid>
             <Grid item xs={2} md={2} lg={2} className="center-flex">
               {showArrowRight ? (
-                <Button
-                  onClick={() => increaseCurrentRecord()}
-                  variant="outlined"
-                  color="secondary"
-                  sx={{
-                    "&:hover": { color: "#c0b3f3", backgroundColor: "#ffffff" },
-                    backgroundColor: "#c0b3f3",
-                  }}
-                  className="button"
-                >
-                  NEXT
-                </Button>
+                <IconButton onClick={() => increaseCurrentRecord()} sx={{ backgroundColor: "var(--primary)" }}>
+                  <ChevronRightIcon
+                    color="secondary"
+                    className="icon-button"
+                  />
+                </IconButton>
               ) : (
-                <IconButton onClick={() => resetCurrentRecord()}>
+                <IconButton onClick={() => resetCurrentRecord()} sx={{ backgroundColor: "var(--primary)" }}>
                   <RestartAltIcon
-                    color="buttonColor"
-                    sx={{ fontSize: "40px", "&:hover": { color: "#c0b3f3" } }}
+                    color="secondary"
+                    className="icon-button"
                   />
                 </IconButton>
               )}
             </Grid>
           </Grid>
-          <Grid item className="divider height100" xs={0} md={5} lg={5}></Grid>
         </Grid>
       </Grid>
       <ExperienceRecord record={experienceData[currentRecord]} />
 
-      <Grid
+      {/* <Grid
         item
         container
         xs={12}
@@ -158,7 +146,7 @@ function Experience(props) {
             sx={{ fontSize: "30px", "&:hover": { color: "#000000" } }}
           />
         </IconButton>
-      </Grid>
+      </Grid> */}
     </Grid>
   );
 }
