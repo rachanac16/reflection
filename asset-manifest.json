@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/reflection/static/css/main.7cdc1a68.css",
-    "main.js": "/reflection/static/js/main.f75a4577.js",
+    "main.css": "/reflection/static/css/main.b1508569.css",
+    "main.js": "/reflection/static/js/main.dc20d585.js",
     "static/js/787.892d4448.chunk.js": "/reflection/static/js/787.892d4448.chunk.js",
     "static/media/cover.jpg": "/reflection/static/media/cover.cb5c578a5fb803ccea94.jpg",
     "static/media/onlineprintshop.jpg": "/reflection/static/media/onlineprintshop.275d353e93a20535ba98.jpg",
@@ -13,12 +13,12 @@
     "static/media/divider.png": "/reflection/static/media/divider.57e5eb7ffeafeb3fe5dd.png",
     "static/media/woman-computer.png": "/reflection/static/media/woman-computer.980c5057b60121606bba.png",
     "index.html": "/reflection/index.html",
-    "main.7cdc1a68.css.map": "/reflection/static/css/main.7cdc1a68.css.map",
-    "main.f75a4577.js.map": "/reflection/static/js/main.f75a4577.js.map",
+    "main.b1508569.css.map": "/reflection/static/css/main.b1508569.css.map",
+    "main.dc20d585.js.map": "/reflection/static/js/main.dc20d585.js.map",
     "787.892d4448.chunk.js.map": "/reflection/static/js/787.892d4448.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7cdc1a68.css",
-    "static/js/main.f75a4577.js"
+    "static/css/main.b1508569.css",
+    "static/js/main.dc20d585.js"
   ]
 }
