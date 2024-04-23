@@ -190,11 +190,27 @@
 }
 
 .icon-button{
-  font-size: 40px;
+  animation: shake 0.2s ease-out;
+  animation-duration: 5s;
 }
 .icon-button:hover{
   color: var(--primary);
 }
+
+@keyframes shake { 
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+} 
 .center-flex-stretch{
   display: flex;
   align-items: stretch;
@@ -232,16 +248,21 @@
 }
 
 .progress{
-  width: 25%;
+  width: 99%;
   background-color: var(--primary);
-  height: 10px;
+  height: 5px;
   transition: all 1s ease;
 }
 
-.progress:hover{
-  width: 50%;
+.progress-remaining{
+  width: 0%;
+  background-color: var(--primary);
+  border-color: var(--secondary);
+  height: 0px;
+  border-width: 2.5px;
+  border-style: dashed;
+  transition: all 1s ease;
 }
-
 
 .education-container{
   height:100%;

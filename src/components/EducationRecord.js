@@ -66,8 +66,8 @@ function EducationRecord(props) {
         <Grid item className="content body">
           <div>Relevant Coursework</div>
           <ul>
-            {record.relevantCoursework.map((course) => (
-              <li>{course}</li>
+            {record.relevantCoursework.map((course, i) => (
+              <li key={i}>{course}</li>
             ))}
           </ul>
         </Grid>

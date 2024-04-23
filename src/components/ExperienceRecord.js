@@ -9,12 +9,21 @@ function ExperienceRecord(props) {
   }, [props.record]);
 
   return (
-    <Grid item container xs={12} md={12} lg={12} className="bg-secondary center-flex-stretch" p={2} sx={{ height: "60%"}}>
+    <Grid
+      item
+      container
+      xs={12}
+      md={12}
+      lg={12}
+      className="bg-secondary center-flex-stretch"
+      p={2}
+      sx={{ height: "60%" }}
+    >
       <Grid item xs={2} md={2} lg={2} className="display-flex-center">
         <Avatar
           alt={record.companyName}
           src={record.icon}
-          sx={{ height: "15vw", width: "15vw", borderRadius: '2rem' }}
+          sx={{ height: "15vw", width: "15vw", borderRadius: "2rem" }}
           variant="square"
         />
       </Grid>
@@ -31,7 +40,7 @@ function ExperienceRecord(props) {
         <Grid item className="sub-header">
           {record.companyName}
         </Grid>
-        
+
         <Grid item className="body content">
           {record.position}, {record.location}
         </Grid>
@@ -54,8 +63,10 @@ function ExperienceRecord(props) {
         <Grid item className="content body">
           <div className="">Key Takeaways</div>
           <ul>
-            {record.description.map((course) => (
-              <li style={{ paddingBottom: "5px"}}>{course}</li>
+            {record.description.map((course, i) => (
+              <li style={{ paddingBottom: "5px" }} key={i}>
+                {course}
+              </li>
             ))}
           </ul>
         </Grid>

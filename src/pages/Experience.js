@@ -1,51 +1,69 @@
 import { Grid, IconButton, Button } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import Navbar from "../components/Navbar";
 import ExperienceData from "../components/ExperienceData";
 import ExperienceRecord from "../components/ExperienceRecord";
 import RestartAltIcon from "@mui/icons-material/RestartAlt";
+import Slide from "@mui/material/Slide";
 
 function Experience(props) {
   const [currentRecord, setCurrentRecord] = useState(0);
   const [showArrowLeft, setShowArrowLeft] = useState(false);
   const [showArrowRight, setShowArrowRight] = useState(true);
   const [experienceData, setExperienceData] = useState(ExperienceData);
-  const progressFactor = 100 / ExperienceData.length;
+  const [progressFactor, setProgressFactor] = useState(
+    100 / ExperienceData.length,
+  );
 
-  const increaseCurrentRecord = () => {
-    if (currentRecord < experienceData.length - 2) {
-      setShowArrowRight(true);
-      setShowArrowLeft(true);
-    } else {
-      setShowArrowRight(false);
-    }
+  const setProgress = (width) => {
     const progress = document.querySelector("#progress");
-    progress.style.width = progressFactor * (currentRecord + 2) + "%";
-    setCurrentRecord(currentRecord + 1);
+    const progressRemaining = document.querySelector("#progress-remaining");
+    progressRemaining.style.width = width + "%";
+    progress.style.width = 99 - width + "%";
+    return width;
   };
 
-  const decreaseCurrentRecord = () => {
-    if (currentRecord === experienceData.length - 1) {
+  const increaseCurrentRecord = () => {
+    const curr = currentRecord + 1;
+    if (curr > experienceData.length - 1) {
+      return;
+    }
+    if (curr === experienceData.length - 1) {
+      setShowArrowRight(false);
+      setShowArrowLeft(true);
+    } else if (curr > 0) {
       setShowArrowRight(true);
-    } else if (currentRecord > 1) {
       setShowArrowLeft(true);
     } else {
       setShowArrowLeft(false);
     }
-    setCurrentRecord(currentRecord - 1);
-    const progress = document.querySelector("#progress");
-    progress.style.width = progressFactor * currentRecord + "%";
+    setProgress(progressFactor * curr);
+    setCurrentRecord(curr);
+  };
+
+  const decreaseCurrentRecord = () => {
+    const curr = currentRecord - 1;
+    if (curr < 0) {
+      return;
+    }
+    if (curr > 0) {
+      setShowArrowLeft(true);
+      setShowArrowRight(true);
+    } else {
+      setShowArrowLeft(false);
+    }
+    setProgress(progressFactor * curr);
+    setCurrentRecord(curr);
   };
 
   const resetCurrentRecord = () => {
     setCurrentRecord(0);
     setShowArrowLeft(false);
     setShowArrowRight(true);
-    const progress = document.querySelector("#progress");
-    progress.style.width = progressFactor + "%";
+    setProgress(0);
   };
 
   return (
@@ -63,10 +81,18 @@ function Experience(props) {
       >
         Experience
       </Grid>
-      <Grid item xs={12} md={12} lg={12} className="bg-white" spacing={0}>
+      <Grid
+        item
+        container
+        xs={12}
+        md={12}
+        lg={12}
+        sx={{ paddingLeft: "7rem", paddingRight: "7rem", display: "flex" }}
+      >
+        <div className="progress-remaining" id="progress-remaining"></div>
         <div className="progress" id="progress"></div>
       </Grid>
-      <Grid item container xs={12} md={12} lg={12} className="bg-white">
+      <Grid item container xs={12} md={12} lg={12}>
         <Grid
           item
           container
@@ -91,12 +117,16 @@ function Experience(props) {
                 xs={2}
                 md={2}
                 lg={2}
-                className="content-big center-flex"
+                className="content-big center-flex icon-button"
               >
-                <IconButton onClick={() => increaseCurrentRecord()} sx={{ backgroundColor: "var(--primary)" }}>
+                <IconButton
+                  onClick={() => decreaseCurrentRecord()}
+                  sx={{ backgroundColor: "var(--primary)" }}
+                >
                   <ChevronLeftIcon
                     color="secondary"
                     className="icon-button"
+                    sx={{ fontSize: "30px" }}
                   />
                 </IconButton>
               </Grid>
@@ -110,23 +140,41 @@ function Experience(props) {
             >
               {experienceData[currentRecord].date}
             </Grid>
-            <Grid item xs={2} md={2} lg={2} className="center-flex">
-              {showArrowRight ? (
-                <IconButton onClick={() => increaseCurrentRecord()} sx={{ backgroundColor: "var(--primary)" }}>
+            {showArrowRight ? (
+              <Grid
+                item
+                xs={2}
+                md={2}
+                lg={2}
+                className="center-flex icon-button"
+              >
+                <IconButton
+                  onClick={() => increaseCurrentRecord()}
+                  sx={{ backgroundColor: "var(--primary)" }}
+                >
                   <ChevronRightIcon
                     color="secondary"
                     className="icon-button"
+                    sx={{ fontSize: "30px" }}
                   />
                 </IconButton>
-              ) : (
-                <IconButton onClick={() => resetCurrentRecord()} sx={{ backgroundColor: "var(--primary)" }}>
+              </Grid>
+            ) : (
+              <Grid item xs={2} md={2} lg={2} className="center-flex">
+                <IconButton
+                  onClick={() => resetCurrentRecord()}
+                  sx={{ backgroundColor: "var(--primary)" }}
+                >
                   <RestartAltIcon
                     color="secondary"
-                    className="icon-button"
+                    sx={{
+                      fontSize: "30px",
+                      "&hover": { color: "var(--primary" },
+                    }}
                   />
                 </IconButton>
-              )}
-            </Grid>
+              </Grid>
+            )}
           </Grid>
         </Grid>
       </Grid>
