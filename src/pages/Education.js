@@ -56,7 +56,7 @@ function Education(props) {
         </IconButton>
       </Grid> */}
       <div className="next-arrow-icon-education">
-      <IconButton onClick={() => props.scrollTo("#experience")}>
+        <IconButton onClick={() => props.scrollTo("#experience")}>
           <KeyboardDoubleArrowDownIcon
             color="primary"
             sx={{ fontSize: "40px", "&:hover": { color: "black" } }}

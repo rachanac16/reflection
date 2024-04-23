@@ -29,7 +29,13 @@ function Projects(props) {
         Projects
       </Grid>
       <Grid item xs={12} md={4} lg={4} p={2} className="content body">
-        <Card sx={{ maxWidth: 500, minHeight: 550, backgroundColor: 'var(--secondary)' }} >
+        <Card
+          sx={{
+            maxWidth: 500,
+            minHeight: 550,
+            backgroundColor: "var(--secondary)",
+          }}
+        >
           <CardMedia
             component="img"
             height="194"
@@ -55,7 +61,13 @@ function Projects(props) {
       </Grid>
 
       <Grid item xs={12} md={4} lg={4} p={2} className="content body">
-        <Card sx={{ maxWidth: 500, minHeight: 550 , backgroundColor: 'var(--secondary)'}}>
+        <Card
+          sx={{
+            maxWidth: 500,
+            minHeight: 550,
+            backgroundColor: "var(--secondary)",
+          }}
+        >
           <CardMedia component="img" height="194" image={MIB} alt="MIB" />
 
           <CardContent>
@@ -69,7 +81,9 @@ function Projects(props) {
                   )
                 }
               >
-                <PictureAsPdfIcon sx={{ fontSize: "30px", "&:hover": { color: "black" } }} />
+                <PictureAsPdfIcon
+                  sx={{ fontSize: "30px", "&:hover": { color: "black" } }}
+                />
               </IconButton>
             </div>
             <div className="content-small color-grey padding2">
@@ -88,7 +102,13 @@ function Projects(props) {
       </Grid>
 
       <Grid item xs={12} md={4} lg={4} p={2} className="content body">
-        <Card sx={{ maxWidth: 500, minHeight: 550 , backgroundColor: 'var(--secondary)'}}>
+        <Card
+          sx={{
+            maxWidth: 500,
+            minHeight: 550,
+            backgroundColor: "var(--secondary)",
+          }}
+        >
           <CardMedia
             component="img"
             height="194"
@@ -104,7 +124,9 @@ function Projects(props) {
                   openInNewTab("https://github.com/rachanac16/OnlinePrintShop")
                 }
               >
-                <GitHubIcon sx={{ fontSize: "30px", "&:hover": { color: "#000000" } }} />
+                <GitHubIcon
+                  sx={{ fontSize: "30px", "&:hover": { color: "#000000" } }}
+                />
               </IconButton>
             </div>
             <br />

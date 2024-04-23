@@ -58,14 +58,14 @@ function About(props) {
         className="bg-primary"
       >
         <img src={woman} className="image-container-about" />
-      <div className="next-arrow-icon">
-      <IconButton onClick={() => props.scrollTo("#education")}>
-          <KeyboardDoubleArrowDownIcon
-            color="secondary"
-            sx={{ fontSize: "40px", "&:hover": { color: "#000000" } }}
-          />
-        </IconButton>
-      </div>
+        <div className="next-arrow-icon">
+          <IconButton onClick={() => props.scrollTo("#education")}>
+            <KeyboardDoubleArrowDownIcon
+              color="secondary"
+              sx={{ fontSize: "40px", "&:hover": { color: "#000000" } }}
+            />
+          </IconButton>
+        </div>
       </Grid>
     </Grid>
   );

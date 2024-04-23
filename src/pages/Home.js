@@ -7,7 +7,6 @@ import EmailIcon from "@mui/icons-material/Email";
 import SubjectIcon from "@mui/icons-material/Subject";
 import KeyboardDoubleArrowDownIcon from "@mui/icons-material/KeyboardDoubleArrowDown";
 
-
 function Home(props) {
   const openInNewTab = (url) => {
     window.open(url, "_blank", "noopener,noreferrer");
@@ -91,18 +90,20 @@ function Home(props) {
           </IconButton>
         </Grid>
         <Grid
-        item
-        container
-        xs={4} md={5} lg={5}
-        className="center-flex bg-primary"
-      >
-        <IconButton onClick={() => props.scrollTo("#about")}>
-          <KeyboardDoubleArrowDownIcon
-            color="secondary"
-            sx={{ fontSize: "40px", "&:hover": { color: "#000000" } }}
-          />
-        </IconButton>
-      </Grid>
+          item
+          container
+          xs={4}
+          md={5}
+          lg={5}
+          className="center-flex bg-primary"
+        >
+          <IconButton onClick={() => props.scrollTo("#about")}>
+            <KeyboardDoubleArrowDownIcon
+              color="secondary"
+              sx={{ fontSize: "40px", "&:hover": { color: "#000000" } }}
+            />
+          </IconButton>
+        </Grid>
       </Grid>
     </Grid>
   );
